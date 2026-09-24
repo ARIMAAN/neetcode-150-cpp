@@ -65,3 +65,6 @@ public:
 |--|--|
 | **Time** | O(n log n) — dominated by sort |
 | **Space** | O(1) — in-place sort |
+
+> This approach works for Unicode strings too, not just lowercase English.
+> The hash map approach assumes a fixed charset (26 letters), but sorting is charset-agnostic.
