@@ -47,3 +47,9 @@ Sorting is O(n log n). The problem explicitly asks for O(n). The hash set approa
 ## Key Takeaway
 
 > The O(n) trick: put everything in a set, then only start counting from numbers that have no predecessor (`num-1` not in set). This guarantees each number is processed at most twice total.
+
+## Thought Process
+
+Sorting gives O(n log n) — too slow per constraint.
+Hash set gives O(1) lookup. Key insight: only start sequences from their true beginning.
+If `num-1` exists, `num` is not a start — skip it. This avoids redundant counting.
