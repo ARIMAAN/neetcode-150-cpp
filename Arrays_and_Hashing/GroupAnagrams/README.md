@@ -42,3 +42,9 @@ Output: [["a"]]
 | 3 | Hash Map (Char Count) ✅ | O(n * k) | O(n * k) | [HashMap.md](./HashMap.md) |
 
 > `n` = number of strings, `k` = max length of a string
+
+## Key Takeaway
+
+Anagram grouping = canonical form grouping. Two strings are anagrams iff they have the same canonical form.
+Sorted string or char-count array both work as canonical forms.
+Char-count is faster: O(k) vs O(k log k) per string.
