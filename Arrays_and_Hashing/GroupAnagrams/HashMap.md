@@ -122,3 +122,5 @@ public:
 | **Space** | O(m * n) — map stores all strings |
 
 > Better than sorting when strings are long since O(n) < O(n log n).
+
+> The `#` separator in the key is important. Without it, `[1,11]` and `[11,1]` would produce the same key string `"111"`. With `#`: `"1#11#"` vs `"11#1#"` — distinct.
