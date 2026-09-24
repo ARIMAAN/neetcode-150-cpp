@@ -60,3 +60,6 @@ public:
 | **Space** | O(1) — in-place sort |
 
 > ⚠️ Modifies the original array. Use a copy if the input must be preserved.
+
+> When to prefer sorting over hash set: when extra memory is not allowed.
+> Sorting is O(1) space (in-place), hash set is O(n). Trade time for space.
