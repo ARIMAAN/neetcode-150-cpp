@@ -6,7 +6,7 @@
 
 ## 📌 About
 
-This repository contains my structured C++ solutions to the **NeetCode 150** problem set — a curated list of the most important LeetCode problems for coding interviews.
+This repository contains my structured solutions to the **NeetCode 150** problem set — a curated list of the most important LeetCode problems for coding interviews.
 
 - Language: **C++**
 - Goal: Placement preparation + MTech revision
@@ -49,32 +49,25 @@ This repository contains my structured C++ solutions to the **NeetCode 150** pro
 
 ---
 
-## 🗂️ Solution File Template
+## 🗂️ Structure
 
-Each `.cpp` file follows this structure:
+Each problem has its own folder with a `README.md` and one markdown file per approach:
 
-```cpp
-/*
- * Problem : <Problem Name>
- * Link    : https://leetcode.com/problems/<slug>/
- * Difficulty: Easy / Medium / Hard
- *
- * Approach:
- *   <Brief description of the approach>
- *
- * Time  : O(?)
- * Space : O(?)
- */
+```
+Topic/
+└── ProblemName/
+    ├── README.md         ← problem statement + approach comparison
+    ├── BruteForce.md     ← intuition, algorithm, code, dry run
+    ├── Sorting.md
+    └── HashSet.md        ← (or whichever approaches apply)
 ```
 
----
-
-## 🚀 How to Run
-
-```bash
-g++ -o solution ProblemName.cpp
-./solution
-```
+Each approach file contains:
+- Intuition
+- Algorithm steps
+- C++ code block
+- Dry run table
+- Time & Space complexity
 
 ---
 
