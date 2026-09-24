@@ -52,3 +52,10 @@ Output: [7]
 ## Key Takeaway
 
 > Bucket Sort wins here because frequency is bounded by `n`, turning an O(n log n) problem into O(n). Always ask: *"Is the value domain bounded?"* — if yes, counting/bucket sort is likely optimal.
+
+## Thought Process
+
+First instinct: sort by frequency. That's O(n log n).
+Then: min-heap of size k. That's O(n log k) — better.
+Then: frequency is bounded by n, so bucket sort. That's O(n) — optimal.
+Each step is a natural improvement once you notice the constraint.
