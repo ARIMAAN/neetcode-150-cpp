@@ -78,3 +78,7 @@ Building frequency maps:
 |--|--|
 | **Time** | O(n) — single pass through both strings |
 | **Space** | O(1) — at most 26 keys (lowercase letters only) |
+
+> Alternative: use a single `int freq[26] = {0}` array.
+> Increment for chars in `s`, decrement for chars in `t`.
+> If all entries are 0 at the end, strings are anagrams. Slightly faster than two maps.
