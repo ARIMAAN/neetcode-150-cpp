@@ -32,3 +32,8 @@ Output: false
 | 1 | Brute Force | O(n²) | O(1) | [BruteForce.md](./BruteForce.md) |
 | 2 | Sorting | O(n log n) | O(1) | [Sorting.md](./Sorting.md) |
 | 3 | Hash Set ✅ | O(n) | O(n) | [HashSet.md](./HashSet.md) |
+
+## Key Takeaway
+
+This is the gateway problem for hashing. If you can't use extra space, sort first.
+If you can, a hash set gives O(n) with one pass.
