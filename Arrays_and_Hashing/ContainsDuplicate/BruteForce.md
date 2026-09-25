@@ -62,3 +62,5 @@ public:
 | **Space** | O(1) — no extra data structures |
 
 > ⚠️ Will TLE on large inputs (`n = 10^5`).
+
+> Number of pairs checked = n*(n-1)/2. For n=10^5 that's ~5×10^9 comparisons.
