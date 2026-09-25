@@ -57,3 +57,6 @@ public:
 |--|--|
 | **Time** | O(n) — single pass, O(1) avg lookup |
 | **Space** | O(n) — set stores up to n elements |
+
+> `unordered_set` uses a hash table internally — O(1) average insert and lookup.
+> Worst case O(n) per operation due to hash collisions, but rare in practice.
