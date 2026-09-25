@@ -40,3 +40,8 @@ Output: true
 |---|----------|------|-------|------|
 | 1 | Sorting | O(n log n) | O(1) | [Sorting.md](./Sorting.md) |
 | 2 | Hash Map ✅ | O(n) | O(1) | [HashMap.md](./HashMap.md) |
+
+## Key Takeaway
+
+Anagram check = frequency check. Two strings are anagrams iff their char frequency arrays are identical.
+This same idea powers Permutation in String and Group Anagrams.
