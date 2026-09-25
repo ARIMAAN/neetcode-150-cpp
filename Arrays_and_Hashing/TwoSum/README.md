@@ -44,3 +44,8 @@ Output: [0, 1]
 | 2 | Sorting + Two Pointers | O(n log n) | O(n) | [Sorting.md](./Sorting.md) |
 | 3 | Hash Map (Two Pass) | O(n) | O(n) | [HashMapTwoPass.md](./HashMapTwoPass.md) |
 | 4 | Hash Map (One Pass) ✅ | O(n) | O(n) | [HashMapOnePass.md](./HashMapOnePass.md) |
+
+## Key Takeaway
+
+One-pass hashmap: store complement as you go. When you see a number whose complement is already stored, done.
+This avoids the two-pass overhead and is the cleanest O(n) solution.
