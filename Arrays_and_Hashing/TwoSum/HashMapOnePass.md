@@ -1,4 +1,4 @@
-# Hash Map ✅ Optimal
+# Hash Map — One Pass ✅ Optimal
 
 > **Time:** O(n) &nbsp;|&nbsp; **Space:** O(n)
 
