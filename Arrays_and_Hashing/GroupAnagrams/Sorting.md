@@ -1,21 +1,37 @@
 # Sorting
 
-> **Time:** O(n * k log k) &nbsp;|&nbsp; **Space:** O(n * k)
+> **Time:** O(m * n log n) &nbsp;|&nbsp; **Space:** O(m * n)
 
 ---
 
 ## Intuition
 
-Anagrams always produce the **same string when sorted**. Use the sorted string as a key in a hash map. All strings that share the same sorted key are anagrams — group them together.
+If we sort each character of each string, anagrams will produce the **same sorted string**. Use that sorted string as a key to group them in a hash map.
 
 ---
 
 ## Algorithm
 
-1. Create an `unordered_map<string, vector<string>> map`.
-2. For each string `s`, sort it to get key.
-3. Append `s` to `map[key]`.
-4. Return all values from the map.
+1. For each string `s`, sort its characters to create a `key`.
+2. Push `s` into `map[key]`.
+3. Return all values from the map.
+
+---
+
+## Key Idea
+
+```
+"eat"  →  "aet"
+"tea"  →  "aet"
+"tan"  →  "ant"
+"ate"  →  "aet"
+"nat"  →  "ant"
+"bat"  →  "abt"
+
+"aet": ["eat", "tea", "ate"]
+"ant": ["tan", "nat"]
+"abt": ["bat"]
+```
 
 ---
 
@@ -25,17 +41,19 @@ Anagrams always produce the **same string when sorted**. Use the sorted string a
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
-        unordered_map<string, vector<string>> gana;
-        for (string s : strs) {
-            string word = s;
-            sort(word.begin(), word.end());
-            gana[word].push_back(s);
+        unordered_map<string, vector<string>> ans;
+
+        for (string& s : strs) {
+            string key = s;
+            sort(key.begin(), key.end());
+            ans[key].push_back(s);
         }
-        vector<vector<string>> res;
-        for (auto x : gana) {
-            res.push_back(x.second);
+
+        vector<vector<string>> result;
+        for (auto& entry : ans) {
+            result.push_back(entry.second);
         }
-        return res;
+        return result;
     }
 };
 ```
@@ -63,5 +81,5 @@ public:
 
 | | |
 |--|--|
-| **Time** | O(n * k log k) — sorting each string of length k |
-| **Space** | O(n * k) — map stores all strings |
+| **Time** | O(m * n log n) — sorting each string of length n, for m strings |
+| **Space** | O(m * n) — map stores all strings |
