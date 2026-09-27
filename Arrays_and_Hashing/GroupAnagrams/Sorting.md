@@ -25,17 +25,17 @@ Anagrams always produce the **same string when sorted**. Use the sorted string a
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
-        unordered_map<string, vector<string>> map;
-        for (auto& s : strs) {
-            string key = s;
-            sort(key.begin(), key.end());
-            map[key].push_back(s);
+        unordered_map<string, vector<string>> gana;
+        for (string s : strs) {
+            string word = s;
+            sort(word.begin(), word.end());
+            gana[word].push_back(s);
         }
-        vector<vector<string>> result;
-        for (auto& pair : map) {
-            result.push_back(pair.second);
+        vector<vector<string>> res;
+        for (auto x : gana) {
+            res.push_back(x.second);
         }
-        return result;
+        return res;
     }
 };
 ```
