@@ -59,6 +59,12 @@ Return first `k=2`: `[3, 2]` ✅
 
 ---
 
+**Input:** `nums = [7,7]`, `k = 1`
+
+Count: `{7:2}` → keys: `[7]` → sorted: `[7]` → return `[7]` ✅
+
+---
+
 ## Complexity
 
 | | |
