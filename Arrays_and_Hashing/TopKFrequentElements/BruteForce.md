@@ -67,3 +67,5 @@ Return first `k=2`: `[3, 2]` ✅
 | **Space** | O(n) — count map + keys vector |
 
 > ⚠️ Not optimal — sorting all unique elements is unnecessary when we only need top k.
+
+> ⚠️ Will TLE on large inputs when combined with high unique element count.
