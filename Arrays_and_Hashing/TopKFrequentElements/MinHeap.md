@@ -79,6 +79,14 @@ Heap: `[(2,2),(3,3)]` → result: `[2,3]` ✅
 
 ---
 
+## When to Use Min-Heap Over Bucket Sort?
+
+- Use **Min-Heap** when `k` is very small relative to `n` (e.g., top 3 out of 10^6 elements) — heap stays tiny
+- Use **Bucket Sort** when you need true O(n) and `n` is bounded
+- In interviews, **Bucket Sort** is the impressive answer; **Min-Heap** shows solid heap knowledge
+
+---
+
 ## Complexity
 
 | | |
