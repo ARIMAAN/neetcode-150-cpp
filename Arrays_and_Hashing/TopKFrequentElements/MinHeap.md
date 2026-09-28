@@ -48,7 +48,7 @@ public:
 
         for (auto& [num, freq] : count) {
             minHeap.push({freq, num});
-            if (minHeap.size() > k) minHeap.pop();
+            if (minHeap.size() > k) minHeap.pop(); // evict least frequent
         }
 
         vector<int> res;
@@ -60,6 +60,8 @@ public:
     }
 };
 ```
+
+> 💡 `greater<>` makes it a min-heap (default `priority_queue` is max-heap). Structured bindings `[num, freq]` require C++17.
 
 ---
 
