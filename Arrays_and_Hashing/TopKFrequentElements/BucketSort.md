@@ -20,6 +20,8 @@ freq can only range from 1 to n
 
 No sorting needed → O(n).
 
+> This is a classic **Counting Sort** variant — works because the value domain (frequency) is bounded.
+
 ---
 
 ## Algorithm
