@@ -36,3 +36,9 @@ Output: [7]
 | 1 | Brute Force (Sort by Freq) | O(n log n) | O(n) | [BruteForce.md](./BruteForce.md) |
 | 2 | Min-Heap | O(n log k) | O(n) | [MinHeap.md](./MinHeap.md) |
 | 3 | Bucket Sort ✅ | O(n) | O(n) | [BucketSort.md](./BucketSort.md) |
+
+---
+
+## Key Takeaway
+
+> Bucket Sort wins here because frequency is bounded by `n`, turning an O(n log n) problem into O(n). Always ask: *"Is the value domain bounded?"* — if yes, counting/bucket sort is likely optimal.
