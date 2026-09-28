@@ -19,6 +19,8 @@ Heap stores: (frequency, num)
 Min-heap → smallest frequency is at top → easy to evict
 ```
 
+> Think of it as a sliding window of size k over frequencies — we always kick out the weakest.
+
 ---
 
 ## Algorithm
