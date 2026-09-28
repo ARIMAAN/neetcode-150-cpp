@@ -39,6 +39,16 @@ Output: [7]
 
 ---
 
+## Related Problems
+
+| Problem | Connection |
+|---------|------------|
+| [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) | Same pattern, strings instead of ints |
+| [451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) | Bucket sort on char frequency |
+| [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/) | Top-k with min-heap on distance |
+
+---
+
 ## Key Takeaway
 
 > Bucket Sort wins here because frequency is bounded by `n`, turning an O(n log n) problem into O(n). Always ask: *"Is the value domain bounded?"* — if yes, counting/bucket sort is likely optimal.
