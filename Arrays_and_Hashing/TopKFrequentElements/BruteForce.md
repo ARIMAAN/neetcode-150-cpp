@@ -40,6 +40,8 @@ public:
 };
 ```
 
+> 💡 The lambda `[&]` captures `count` by reference so the comparator can access frequencies.
+
 ---
 
 ## Dry Run
