@@ -107,6 +107,17 @@ Iterate from index 2 → push 7 → `res.size() == 1` → return `[7]` ✅
 
 ---
 
+## Edge Cases
+
+| Case | Example | Expected |
+|------|---------|----------|
+| All same elements | `[3,3,3]`, k=1 | `[3]` |
+| k = total unique | `[1,2,3]`, k=3 | `[1,2,3]` |
+| Single element | `[7,7]`, k=1 | `[7]` |
+| All unique | `[1,2,3,4]`, k=2 | any 2 (all freq=1) |
+
+---
+
 ## Complexity
 
 | | |
