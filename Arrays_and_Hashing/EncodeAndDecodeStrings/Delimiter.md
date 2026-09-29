@@ -53,6 +53,14 @@ public:
 
 ---
 
+## Escaping Alternative
+
+Another valid approach is **escape sequences** — treat `|` as delimiter but escape any `|` inside strings as `\|`. This works but adds O(n) preprocessing and makes decode more complex.
+
+> Length prefix is simpler and more elegant — no escaping needed.
+
+---
+
 ## Why This Fails
 
 ```
