@@ -35,6 +35,28 @@ Pattern per string: `<length>#<string>`
 
 ---
 
+## Decode — Two Pointer Walkthrough
+
+```
+s = "5#Hello5#World"
+     ^
+     i=0, scan j until s[j]=='#'
+          j=1 → s[1]='#'
+          length = stoi("5") = 5
+          i = j+1 = 2
+          extract s[2..6] = "Hello"
+          i = 7
+
+     i=7, scan j until s[j]=='#'
+          j=8 → s[8]='#'
+          length = stoi("5") = 5
+          i = j+1 = 9
+          extract s[9..13] = "World"
+          i = 14  → loop ends
+```
+
+---
+
 ## Algorithm
 
 **Encode:**
