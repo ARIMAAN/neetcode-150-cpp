@@ -4,6 +4,19 @@
 
 ---
 
+## Why `#` as Separator Between Length and String?
+
+The length is a variable-width number (could be `1`, `10`, `200`). We need to know where the number ends and the string begins. `#` acts as a terminator for the length field.
+
+```
+"10#HelloWorld"  →  length=10, string="HelloWorld"
+"1#a"            →  length=1,  string="a"
+```
+
+> Any character that is NOT a digit works as the separator. `#` is conventional.
+
+---
+
 ## Intuition
 
 Prefix each string with its **length followed by `#`**. On decode, read the length, skip past `#`, then extract exactly that many characters. Since we use the length to jump — not a delimiter to split — any character inside the string is safe.
