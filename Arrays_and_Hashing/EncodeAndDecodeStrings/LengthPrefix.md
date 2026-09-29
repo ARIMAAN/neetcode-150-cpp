@@ -176,6 +176,8 @@ public:
 | **Time** | O(n) — encode: one pass; decode: one pass total across all characters |
 | **Space** | O(n) — encoded string + result vector |
 
+> `substr` calls are O(length) each, but total characters across all substrings = n, so overall decode is still O(n).
+
 ---
 
 ## Comparison
