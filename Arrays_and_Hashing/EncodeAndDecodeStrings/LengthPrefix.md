@@ -75,16 +75,18 @@ s = "5#Hello5#World"
 ```cpp
 class Solution {
 public:
+    // Encode: prefix each string with "<len>#"
     string encode(vector<string>& strs) {
         string res;
         for (string s : strs) {
-            res.append(to_string(s.size()));
-            res.push_back('#');
-            res.append(s);
+            res.append(to_string(s.size())); // write length
+            res.push_back('#');              // write separator
+            res.append(s);                   // write actual string
         }
         return res;
     }
 
+    // Decode: read length, skip '#', extract exactly 'length' chars
     vector<string> decode(string s) {
         vector<string> res;
         int i = 0;
