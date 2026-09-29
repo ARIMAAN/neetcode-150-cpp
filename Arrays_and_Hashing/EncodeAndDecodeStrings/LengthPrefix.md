@@ -1,0 +1,141 @@
+# Length Prefix ✅ Optimal
+
+> **Time:** O(n) &nbsp;|&nbsp; **Space:** O(n)
+
+---
+
+## Intuition
+
+Prefix each string with its **length followed by `#`**. On decode, read the length, skip past `#`, then extract exactly that many characters. Since we use the length to jump — not a delimiter to split — any character inside the string is safe.
+
+---
+
+## Encoding Format
+
+```
+["Hello", "World"]  →  "5#Hello5#World"
+["Hi", ""]          →  "2#Hi0#"
+["a#b", "c"]        →  "3#a#b1#c"   ← # inside string is safe!
+```
+
+Pattern per string: `<length>#<string>`
+
+---
+
+## Algorithm
+
+**Encode:**
+1. For each string `s`, append `len(s) + "#" + s` to result.
+
+**Decode:**
+1. `i = 0`, scan forward with `j` until `s[j] == '#'`.
+2. Parse `length = s[i..j]`.
+3. Move `i = j + 1`, extract `s[i..i+length]`.
+4. Advance `i += length`, repeat.
+
+---
+
+## Code
+
+```cpp
+class Solution {
+public:
+    string encode(vector<string>& strs) {
+        string res;
+        for (string s : strs) {
+            res.append(to_string(s.size()));
+            res.push_back('#');
+            res.append(s);
+        }
+        return res;
+    }
+
+    vector<string> decode(string s) {
+        vector<string> res;
+        int i = 0;
+        while (i < s.size()) {
+            int j = i;
+            while (s[j] != '#') j++;          // find the '#'
+            int length = stoi(s.substr(i, j - i)); // parse length
+            i = j + 1;                         // move past '#'
+            res.push_back(s.substr(i, length)); // extract string
+            i += length;                        // advance to next entry
+        }
+        return res;
+    }
+};
+```
+
+---
+
+## Dry Run
+
+**Input:** `strs = ["Hello", "World"]`
+
+**Encode:**
+
+| s | appended | res so far |
+|---|----------|------------|
+| "Hello" | `5#Hello` | `"5#Hello"` |
+| "World" | `5#World` | `"5#Hello5#World"` |
+
+**Decode:** `s = "5#Hello5#World"`
+
+| i | j (at '#') | length | extracted | i after |
+|---|------------|--------|-----------|---------|
+| 0 | 1 | 5 | "Hello" | 7 |
+| 7 | 8 | 5 | "World" | 14 |
+
+**Output:** `["Hello", "World"]` ✅
+
+---
+
+**Input:** `strs = ["a#b", "c"]`
+
+**Encode:** `"3#a#b1#c"`
+
+**Decode:**
+
+| i | j | length | extracted | i after |
+|---|---|--------|-----------|---------|
+| 0 | 1 | 3 | "a#b" | 5 |
+| 5 | 6 | 1 | "c" | 8 |
+
+**Output:** `["a#b", "c"]` ✅ — `#` inside string handled correctly
+
+---
+
+**Input:** `strs = [""]`
+
+**Encode:** `"0#"`
+
+**Decode:** length=0 → extract `""` → `[""]` ✅
+
+---
+
+## Edge Cases
+
+| Case | Input | Encoded | Decoded |
+|------|-------|---------|---------|
+| Empty string | `[""]` | `"0#"` | `[""]` |
+| String with `#` | `["a#b"]` | `"3#a#b"` | `["a#b"]` |
+| Empty list | `[]` | `""` | `[]` |
+| Multiple empty | `["",""]` | `"0#0#"` | `["",""]` |
+
+---
+
+## Complexity
+
+| | |
+|--|--|
+| **Time** | O(n) — encode: one pass; decode: one pass total across all characters |
+| **Space** | O(n) — encoded string + result vector |
+
+---
+
+## Comparison
+
+| Approach | Handles Special Chars? | Time | Notes |
+|----------|----------------------|------|-------|
+| Delimiter | ❌ No | O(n) | Breaks if delimiter appears in string |
+| Length Prefix ✅ | ✅ Yes | O(n) | Always safe — length tells us exactly where to stop |
