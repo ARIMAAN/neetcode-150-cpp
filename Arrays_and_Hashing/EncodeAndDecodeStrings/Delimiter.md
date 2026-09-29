@@ -81,3 +81,11 @@ The delimiter `|` inside a string is indistinguishable from the separator.
 | **Space** | O(n) — output string / vector |
 
 > ⚠️ Only works if strings are guaranteed to not contain the delimiter. Not safe for general use.
+
+---
+
+## When Is This Acceptable?
+
+- Internal systems where input is controlled (e.g. only alphanumeric strings)
+- Quick prototyping where correctness over all inputs is not required
+- When combined with escaping (see note above)
