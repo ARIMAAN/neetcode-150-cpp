@@ -161,6 +161,14 @@ public:
 
 ---
 
+## Interview Tips
+
+- Interviewer will likely ask: *"What if the string contains `#`?"* — answer: the length tells us exactly how many chars to read, so `#` inside the string is never mistaken for a separator
+- Follow-up: *"What if length itself is very large?"* — `int` handles up to ~2 billion, well beyond the constraint of 200
+- Always walk through the empty string `[""]` edge case — encoded as `"0#"`, decoded back to `[""]`
+
+---
+
 ## Complexity
 
 | | |
