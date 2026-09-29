@@ -1,0 +1,46 @@
+# Encode and Decode Strings
+
+> **Difficulty:** Medium &nbsp;|&nbsp; **Topic:** Arrays & Hashing &nbsp;|&nbsp; [LeetCode #271](https://leetcode.com/problems/encode-and-decode-strings/)
+
+---
+
+## Problem Statement
+
+Design an algorithm to encode a list of strings to a single string, and decode it back to the original list. The encoded string is transmitted over a network.
+
+**Example 1:**
+```
+Input : strs = ["Hello","World"]
+Output: ["Hello","World"]
+```
+**Example 2:**
+```
+Input : strs = [""]
+Output: [""]
+```
+
+**Constraints:**
+- `0 <= strs.length <= 200`
+- `0 <= strs[i].length <= 200`
+- `strs[i]` contains any possible characters including special characters
+
+---
+
+## The Core Challenge
+
+Since strings can contain **any character** (including delimiters like `,` or `|`), a simple separator won't work:
+
+```
+["Hello", "Wo,rld"]  →  "Hello,Wo,rld"  →  ["Hello", "Wo", "rld"]  ❌
+```
+
+We need an **unambiguous encoding** that handles any character.
+
+---
+
+## Approaches
+
+| # | Approach | Time | Space | File |
+|---|----------|------|-------|------|
+| 1 | Delimiter (Naive) | O(n) | O(n) | [Delimiter.md](./Delimiter.md) |
+| 2 | Length Prefix ✅ | O(n) | O(n) | [LengthPrefix.md](./LengthPrefix.md) |
