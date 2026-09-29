@@ -46,6 +46,15 @@ We need an **unambiguous encoding** that handles any character.
 
 ---
 
+## Related Problems
+
+| Problem | Connection |
+|---------|------------|
+| [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Same encode/decode concept on tree nodes |
+| [449. Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Length prefix useful for node values |
+
+---
+
 ## Approaches
 
 | # | Approach | Time | Space | File |
