@@ -55,6 +55,12 @@ We need an **unambiguous encoding** that handles any character.
 
 ---
 
+## Key Takeaway
+
+> Whenever you need to serialize variable-length data without a guaranteed safe delimiter, **length-prefix encoding** is the go-to pattern. It's used in real protocols like HTTP chunked transfer encoding and Protocol Buffers.
+
+---
+
 ## Approaches
 
 | # | Approach | Time | Space | File |
