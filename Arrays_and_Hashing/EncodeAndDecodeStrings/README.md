@@ -26,6 +26,14 @@ Output: [""]
 
 ---
 
+## Why Not Just Use JSON or CSV?
+
+- **CSV** breaks on strings with commas
+- **JSON** adds overhead and escaping complexity
+- **Length prefix** is minimal, O(n), and handles every character natively
+
+---
+
 ## The Core Challenge
 
 Since strings can contain **any character** (including delimiters like `,` or `|`), a simple separator won't work:
