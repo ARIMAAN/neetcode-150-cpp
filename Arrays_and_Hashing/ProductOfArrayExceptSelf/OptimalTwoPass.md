@@ -181,6 +181,8 @@ The prefix×suffix approach sidesteps both issues entirely.
 | **Time** | O(n) — two linear passes |
 | **Space** | O(1) — only two scalar variables (`left`, `right`); output array doesn't count |
 
+> 💡 The problem statement explicitly says: *"The output array does not count as extra space for space complexity analysis."* So this is truly O(1).
+
 ---
 
 ## Comparison
