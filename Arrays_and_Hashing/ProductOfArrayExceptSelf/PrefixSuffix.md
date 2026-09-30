@@ -109,3 +109,16 @@ public:
 | **Space** | O(n) — two extra arrays of size n |
 
 > ✅ Correct and O(n), but uses O(n) extra space. Can we do better?
+
+---
+
+## Memory Visualization
+
+```
+nums   :  [ 1,  2,  3,  4 ]
+prefix :  [ 1,  1,  2,  6 ]   ← 1 extra array
+suffix :  [24, 12,  4,  1 ]   ← 1 extra array
+answer :  [24, 12,  8,  6 ]   ← output
+```
+
+Total extra memory = 2×n integers. The O(1) space approach eliminates both arrays.
