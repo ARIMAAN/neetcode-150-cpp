@@ -129,6 +129,15 @@ Right pass:
 
 ---
 
+## Interview Tips
+
+- Start by explaining the brute force, then say *"we can avoid recomputing by precomputing prefix and suffix products"*
+- The O(1) space insight: *"the output array itself stores the prefix pass, so we don't need a separate prefix array"*
+- Always mention the zero edge case — it's why division doesn't work
+- Follow-up: *"What if there are multiple zeros?"* — answer: all outputs become 0
+
+---
+
 ## Why No Division?
 
 Division would be: `answer[i] = totalProduct / nums[i]`
