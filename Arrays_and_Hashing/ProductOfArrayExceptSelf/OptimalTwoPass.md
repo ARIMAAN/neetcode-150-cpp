@@ -15,6 +15,30 @@ The output array itself serves as the prefix store — no extra arrays needed.
 
 ---
 
+## Step-by-Step State Diagram
+
+```
+nums   = [ 1,  2,  3,  4 ]
+
+--- LEFT PASS ---
+left=1
+i=0: output[0]=1,  left=1
+i=1: output[1]=1,  left=2
+i=2: output[2]=2,  left=6
+i=3: output[3]=6,  left=24
+output = [1, 1, 2, 6]
+
+--- RIGHT PASS ---
+right=1
+i=3: output[3]=6×1=6,   right=4
+i=2: output[2]=2×4=8,   right=12
+i=1: output[1]=1×12=12, right=24
+i=0: output[0]=1×24=24, right=24
+output = [24, 12, 8, 6] ✅
+```
+
+---
+
 ## The Space Trick
 
 ```
