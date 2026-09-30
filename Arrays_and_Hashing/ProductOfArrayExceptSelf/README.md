@@ -28,6 +28,18 @@ Output: [0,0,9,0,0]
 
 ---
 
+## Why Division Is Forbidden
+
+The naive O(n) approach would be: compute `totalProduct`, then `answer[i] = totalProduct / nums[i]`.
+
+This fails for two reasons:
+1. **Zero in array** — `totalProduct = 0`, division by zero is undefined
+2. **Problem constraint** — explicitly forbids the `/` operator
+
+The prefix×suffix pattern avoids both issues entirely.
+
+---
+
 ## The Core Challenge
 
 For each index `i`, we need the product of everything to its **left** × everything to its **right** — without dividing the total product by `nums[i]` (division is forbidden, and zeros break division anyway).
