@@ -63,6 +63,16 @@ answer[i] = leftProduct[i] * rightProduct[i]
 
 ---
 
+## Related Problems
+
+| Problem | Connection |
+|---------|------------|
+| [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Prefix max + suffix max same pattern |
+| [152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | Left/right product passes |
+| [724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | Prefix sum same idea |
+
+---
+
 ## Key Takeaway
 
 > `answer[i] = product of all elements to the LEFT of i × product of all elements to the RIGHT of i`
