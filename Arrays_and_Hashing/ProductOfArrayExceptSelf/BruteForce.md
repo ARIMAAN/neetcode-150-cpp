@@ -66,3 +66,10 @@ public:
 | **Space** | O(1) — no extra space beyond output |
 
 > ⚠️ Will TLE for `n = 10^5`. Division is not used but time constraint is violated.
+
+---
+
+## When Is Brute Force Acceptable?
+
+- `n` is very small (e.g. `n <= 100` in a non-competitive context)
+- Used as a **verifier** to cross-check the optimal solution during testing
