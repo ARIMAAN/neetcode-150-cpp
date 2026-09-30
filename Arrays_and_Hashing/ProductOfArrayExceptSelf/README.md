@@ -77,3 +77,14 @@ answer[i] = leftProduct[i] * rightProduct[i]
 
 > `answer[i] = product of all elements to the LEFT of i × product of all elements to the RIGHT of i`
 > The O(1) space trick: use the output array itself to accumulate the left pass, then multiply the right pass in-place.
+
+---
+
+## Follow-Up: What If All Elements Are Zero?
+
+```
+nums = [0, 0, 0]
+output = [0, 0, 0]   ← every product includes at least one zero
+```
+
+The algorithm handles this naturally — no special casing needed.
