@@ -26,6 +26,8 @@ answer   = [1×24, 1×12, 2×4, 6×1]
          = [24,   12,   8,   6]  ✅
 ```
 
+> Notice: `prefix[0] = 1` (no elements to the left) and `suffix[n-1] = 1` (no elements to the right). These boundary values are crucial.
+
 ---
 
 ## Algorithm
