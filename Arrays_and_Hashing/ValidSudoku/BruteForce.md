@@ -93,3 +93,9 @@ No duplicate in row 0 ✅
 | **Space** | O(1) — sets hold at most 9 chars each |
 
 > ⚠️ Visits every cell 3 times. The single-pass approach does it in 1.
+
+---
+
+## Why 3 Passes Is Still O(1)
+
+Even though we loop 3 times, the board is always fixed at 9×9 = 81 cells. So 3×81 = 243 operations — a constant. This is why both approaches are O(1) time and space.
