@@ -13,6 +13,8 @@ Check each constraint separately in three passes:
 
 Simple to understand but repeats work — visits all 81 cells three times.
 
+> Think of it as three independent validators running one after another.
+
 ---
 
 ## Algorithm
