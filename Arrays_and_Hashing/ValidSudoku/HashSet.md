@@ -118,6 +118,12 @@ All 81 cells processed, no duplicate found in any row/col/box → return `true` 
 
 ---
 
+## What About Digit `'.'`?
+
+We skip `'.'` with `if (board[i][j] == '.') continue;` — empty cells don't participate in any duplicate check. This is correct because the board doesn't need to be complete to be valid.
+
+---
+
 ## Why Arrays of Sets?
 
 ```cpp
