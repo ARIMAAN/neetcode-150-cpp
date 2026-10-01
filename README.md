@@ -44,8 +44,8 @@ This repository contains my structured solutions to the **NeetCode 150** problem
 | Metric | Count |
 |--------|-------|
 | Total Problems | 150 |
-| Solved | 8 |
-| Remaining | 142 |
+| Solved | 9 |
+| Remaining | 141 |
 
 ---
 
