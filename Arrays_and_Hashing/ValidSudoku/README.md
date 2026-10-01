@@ -58,6 +58,15 @@ Example: cell `(0, 0)` → `(0/3)*3 + (0/3)` = `0*3 + 0` = **box 0**
 
 ---
 
+## Related Problems
+
+| Problem | Connection |
+|---------|------------|
+| [37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | Uses this validation logic inside backtracking |
+| [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | This problem |
+
+---
+
 ## Approaches
 
 | # | Approach | Time | Space | File |
