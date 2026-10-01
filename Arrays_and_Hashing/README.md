@@ -8,6 +8,6 @@
 | 4 | Group Anagrams | Medium | [#49](https://leetcode.com/problems/group-anagrams/) | [View](./GroupAnagrams/README.md) | ✅ |
 | 5 | Top K Frequent Elements | Medium | [#347](https://leetcode.com/problems/top-k-frequent-elements/) | — | ⬜ |
 | 6 | Product of Array Except Self | Medium | [#238](https://leetcode.com/problems/product-of-array-except-self/) | [View](./ProductOfArrayExceptSelf/README.md) | ✅ |
-| 7 | Valid Sudoku | Medium | [#36](https://leetcode.com/problems/valid-sudoku/) | — | ⬜ |
+| 7 | Valid Sudoku | Medium | [#36](https://leetcode.com/problems/valid-sudoku/) | [View](./ValidSudoku/README.md) | ✅ |
 | 8 | Encode and Decode Strings | Medium | [#271](https://leetcode.com/problems/encode-and-decode-strings/) | [View](./EncodeAndDecodeStrings/README.md) | ✅ |
 | 9 | Longest Consecutive Sequence | Medium | [#128](https://leetcode.com/problems/longest-consecutive-sequence/) | — | ⬜ |
