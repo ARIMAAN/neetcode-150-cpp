@@ -128,6 +128,12 @@ This creates 9 independent sets — one per row. Same for cols and boxes. Each s
 
 ---
 
+## What Happens If We Use a Single Set?
+
+If we used one global set with just the digit, we'd mix up rows/cols/boxes. For example, digit `'5'` in row 0 and digit `'5'` in row 1 are both valid — a single set would wrongly flag this as a duplicate. That's why we need **separate sets per row, col, and box**.
+
+---
+
 ## Complexity
 
 | | |
