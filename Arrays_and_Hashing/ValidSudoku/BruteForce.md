@@ -85,6 +85,20 @@ No duplicate in row 0 ✅
 
 ---
 
+**Checking col 0:** `["1","4",".","5",".","7",".",".","."]`
+
+| i | value | seen before | duplicate? |
+|---|-------|-------------|------------|
+| 0 | '1' | {} | ❌ → insert |
+| 1 | '4' | {1} | ❌ → insert |
+| 2 | '.' | — | skip |
+| 3 | '5' | {1,4} | ❌ → insert |
+| 5 | '7' | {1,4,5} | ❌ → insert |
+
+No duplicate in col 0 ✅
+
+---
+
 ## Complexity
 
 | | |
