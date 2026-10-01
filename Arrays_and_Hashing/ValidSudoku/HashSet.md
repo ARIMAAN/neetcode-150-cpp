@@ -158,6 +158,8 @@ If we used one global set with just the digit, we'd mix up rows/cols/boxes. For 
 | **Time** | O(1) — exactly 81 cells, each processed once |
 | **Space** | O(1) — 27 sets, each holding at most 9 chars = 243 chars max |
 
+> Since the board size is fixed at 9×9, there is no variable `n`. Everything is bounded by a constant.
+
 ---
 
 ## Comparison
