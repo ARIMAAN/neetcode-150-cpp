@@ -42,6 +42,20 @@ The tricky part is mapping a cell `(i, j)` to its box index.
 
 ---
 
+## Visual: The 9 Boxes
+
+```
++-------+-------+-------+
+| box 0 | box 1 | box 2 |
++-------+-------+-------+
+| box 3 | box 4 | box 5 |
++-------+-------+-------+
+| box 6 | box 7 | box 8 |
++-------+-------+-------+
+```
+
+---
+
 ## Box Index Formula
 
 ```
