@@ -46,6 +46,10 @@ Row 3-5, Col 0-2 → box 3    Row 3-5, Col 3-5 → box 4    Row 3-5, Col 6-8 →
 Row 6-8, Col 0-2 → box 6    Row 6-8, Col 3-5 → box 7    Row 6-8, Col 6-8 → box 8
 ```
 
+Example: cell `(4, 7)` → `(4/3)*3 + (7/3)` = `1*3 + 2` = **box 5**
+
+Example: cell `(0, 0)` → `(0/3)*3 + (0/3)` = `0*3 + 0` = **box 0**
+
 ---
 
 ## Approaches
