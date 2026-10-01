@@ -136,6 +136,15 @@ If we used one global set with just the digit, we'd mix up rows/cols/boxes. For 
 
 ---
 
+## Interview Tips
+
+- The box index formula `(i/3)*3 + (j/3)` is the key insight interviewers look for
+- Mention that since board is always 9×9, time and space are O(1) — not O(n)
+- Early return on first duplicate found is a nice touch
+- Follow-up: *"How would you solve the Sudoku?"* — answer: backtracking using this same validation
+
+---
+
 ## Complexity
 
 | | |
