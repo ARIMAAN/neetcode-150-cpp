@@ -25,6 +25,12 @@ A board is valid if:
 
 ---
 
+## What Does "Valid" Mean Here?
+
+Valid does NOT mean the puzzle is solvable or complete. It just means no rule is currently broken. A board with all `'.'` is perfectly valid.
+
+---
+
 ## The Core Challenge
 
 We need to check 3 things simultaneously for every cell:
