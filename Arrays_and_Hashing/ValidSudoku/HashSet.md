@@ -168,3 +168,11 @@ If we used one global set with just the digit, we'd mix up rows/cols/boxes. For 
 |----------|--------|------|-------|-------|
 | Brute Force (3 passes) | 3 | O(1) | O(1) | Simple but redundant |
 | Hash Set Single Pass ✅ | 1 | O(1) | O(1) | Cleaner, one loop |
+
+---
+
+## Common Mistakes
+
+- Forgetting to skip `'.'` cells — inserting `'.'` into sets would cause false negatives
+- Using wrong box index formula — `(i/3) + (j/3)` is wrong, must be `(i/3)*3 + (j/3)`
+- Checking only rows and cols but forgetting boxes
