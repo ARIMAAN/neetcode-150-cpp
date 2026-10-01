@@ -89,3 +89,9 @@ Example: cell `(0, 0)` → `(0/3)*3 + (0/3)` = `0*3 + 0` = **box 0**
 | 2 | Hash Set Single Pass ✅ | O(1) | O(1) | [HashSet.md](./HashSet.md) |
 
 > Since the board is always 9×9, all complexities are technically O(1) — bounded by constant 81 cells.
+
+---
+
+## Key Takeaway
+
+> The box index formula `(i/3)*3 + (j/3)` is the core trick. Once you have that, the rest is just three hash sets checked simultaneously in one pass.
