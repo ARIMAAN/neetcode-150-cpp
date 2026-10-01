@@ -29,6 +29,8 @@ Integer division groups rows into bands of 3 and cols into bands of 3:
 (6,0)→6  (6,3)→7  (6,6)→8
 ```
 
+> Trick to remember: `i/3` gives the row-band (0,1,2), `j/3` gives the col-band (0,1,2). Multiply row-band by 3 and add col-band to get a unique index 0-8.
+
 ---
 
 ## Algorithm
