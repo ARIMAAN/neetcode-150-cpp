@@ -29,6 +29,8 @@ Put all numbers in a hash set for O(1) lookup. For each number, only start count
 
 This avoids redundant work: we never start counting from the middle of a sequence.
 
+> The set also handles duplicates automatically since sets don't store repeated values.
+
 ---
 
 ## Why Only Start From Sequence Beginnings?
