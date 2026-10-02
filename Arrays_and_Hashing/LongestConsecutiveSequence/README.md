@@ -29,6 +29,12 @@ Output: 7   (sequence: 0,1,2,3,4,5,6)
 
 ---
 
+## Why Sorting Doesn't Work Here (for O(n))
+
+Sorting is O(n log n). The problem explicitly asks for O(n). The hash set approach achieves this by trading space for time — O(n) space to get O(n) time.
+
+---
+
 ## Approaches
 
 | # | Approach | Time | Space | File |
