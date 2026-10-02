@@ -86,6 +86,8 @@ The while loop looks like it could make this O(n²), but each number is visited 
 
 Total work across all while loops = n. So overall O(n).
 
+> Concrete example: `[1,2,3,4,5]` — only `1` triggers the while loop, which runs 4 times. Numbers `2,3,4,5` are each visited once in the outer loop (skipped) and once in the while loop. Total = 5+4 = 9 ops, not 25.
+
 ---
 
 ## Edge Cases
