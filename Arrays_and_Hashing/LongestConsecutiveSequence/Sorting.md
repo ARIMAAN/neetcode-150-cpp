@@ -55,6 +55,24 @@ After sort: `[2,3,4,4,5,10,20]`
 
 ---
 
+**Input:** `nums = [0,3,2,5,4,6,1,1]`
+
+After sort: `[0,1,1,2,3,4,5,6]`
+
+| i | nums[i] | nums[i-1] | action | current | longest |
+|---|---------|-----------|--------|---------|--------|
+| 1 | 1 | 0 | extend | 2 | 2 |
+| 2 | 1 | 1 | skip dup | 2 | 2 |
+| 3 | 2 | 1 | extend | 3 | 3 |
+| 4 | 3 | 2 | extend | 4 | 4 |
+| 5 | 4 | 3 | extend | 5 | 5 |
+| 6 | 5 | 4 | extend | 6 | 6 |
+| 7 | 6 | 5 | extend | 7 | 7 |
+
+**Output:** `7` ✅
+
+---
+
 ## Complexity
 
 | | |
