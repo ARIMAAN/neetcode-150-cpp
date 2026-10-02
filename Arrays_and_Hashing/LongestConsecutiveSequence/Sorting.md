@@ -8,6 +8,8 @@
 
 Sort the array. Then scan linearly — if the next element is exactly 1 more than current, extend the streak. If it's the same (duplicate), skip it. If it's more than 1 away, reset the streak.
 
+> First thing I tried. Simple to code and easy to understand, just doesn't hit O(n).
+
 ---
 
 ## Code
