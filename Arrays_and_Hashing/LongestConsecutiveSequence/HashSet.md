@@ -126,3 +126,13 @@ Total work across all while loops = n. So overall O(n).
 |--|--|
 | **Time** | O(n) — each element visited at most twice total |
 | **Space** | O(n) — hash set stores all unique elements |
+
+---
+
+## Related Problems
+
+| Problem | Connection |
+|---------|------------|
+| [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | This problem |
+| [298. Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | Same idea on a tree |
+| [549. Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/) | Extended version |
