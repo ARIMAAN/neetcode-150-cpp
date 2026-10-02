@@ -81,3 +81,9 @@ After sort: `[0,1,1,2,3,4,5,6]`
 | **Space** | O(1) — sorts in place |
 
 > ⚠️ Doesn't meet the O(n) requirement. Use hash set approach for that.
+
+---
+
+## When Would You Use This?
+
+If the interviewer relaxes the O(n) constraint, sorting is perfectly fine and arguably more readable. Also useful if memory is tight since it's O(1) space.
