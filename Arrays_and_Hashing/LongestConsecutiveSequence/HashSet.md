@@ -122,6 +122,18 @@ Total work across all while loops = n. So overall O(n).
 
 ---
 
+## What If nums Is Empty?
+
+```cpp
+unordered_set<int> numSet(nums.begin(), nums.end()); // empty set
+// for loop never runs
+return longest; // returns 0
+```
+
+No special case needed — the loop just doesn't execute and we return 0.
+
+---
+
 ## Complexity
 
 | | |
