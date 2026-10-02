@@ -35,3 +35,9 @@ Output: 7   (sequence: 0,1,2,3,4,5,6)
 |---|----------|------|-------|------|
 | 1 | Sorting | O(n log n) | O(1) | [Sorting.md](./Sorting.md) |
 | 2 | Hash Set ✅ | O(n) | O(n) | [HashSet.md](./HashSet.md) |
+
+---
+
+## Key Takeaway
+
+> The O(n) trick: put everything in a set, then only start counting from numbers that have no predecessor (`num-1` not in set). This guarantees each number is processed at most twice total.
