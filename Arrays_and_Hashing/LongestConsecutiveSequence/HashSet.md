@@ -4,6 +4,25 @@
 
 ---
 
+## Key Insight
+
+The whole trick is: **only start counting from the beginning of a sequence**.
+
+How do we know if `num` is a sequence start? Check if `num - 1` exists in the set. If it doesn't, `num` has nothing before it — it's a start.
+
+```
+numSet = {2, 3, 4, 5, 10, 20}
+
+num=2  → 1 not in set → START → count 2,3,4,5 → length 4
+num=3  → 2 in set     → SKIP
+num=4  → 3 in set     → SKIP
+num=5  → 4 in set     → SKIP
+num=10 → 9 not in set → START → count 10 → length 1
+num=20 → 19 not in set → START → count 20 → length 1
+```
+
+---
+
 ## Intuition
 
 Put all numbers in a hash set for O(1) lookup. For each number, only start counting a sequence if it's the **start** of a sequence — meaning `num - 1` does NOT exist in the set. Then count upward as far as possible.
