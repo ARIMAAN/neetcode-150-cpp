@@ -97,6 +97,8 @@ return true  ← empty string is a palindrome
 | **Time** | O(n) — each character visited at most once |
 | **Space** | O(1) — no extra string, just two pointers |
 
+> Even though there are two inner while loops, each character is only moved past once total across all iterations.
+
 ---
 
 ## Comparison
