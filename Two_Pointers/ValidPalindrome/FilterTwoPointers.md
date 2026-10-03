@@ -8,6 +8,8 @@
 
 First clean the string — keep only alphanumeric characters and convert to lowercase. Then use two pointers from both ends and check if they match all the way to the middle.
 
+> This was my first approach. Easy to think about because you just clean the string first and then it becomes a simple palindrome check.
+
 ---
 
 ## Code
