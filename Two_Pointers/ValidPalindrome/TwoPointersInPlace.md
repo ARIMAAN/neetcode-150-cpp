@@ -76,6 +76,18 @@ Without the `left < right` guard, if the entire string is non-alphanumeric (e.g.
 
 ---
 
+## What Happens With All Non-Alphanumeric?
+
+```
+s = "!!!"
+left=0, right=2
+inner while: left skips to 3, but left < right stops it at 2
+outer while: left(2) < right(2) is false → exit
+return true  ← empty string is a palindrome
+```
+
+---
+
 ## Complexity
 
 | | |
