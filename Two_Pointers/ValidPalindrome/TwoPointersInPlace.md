@@ -10,6 +10,8 @@ Skip the filtered string entirely. Use two pointers directly on the original str
 
 Same logic, no extra string needed.
 
+> Realized after writing the filter approach that we don't actually need to build the filtered string. We can just skip bad characters while moving the pointers.
+
 ---
 
 ## Code
