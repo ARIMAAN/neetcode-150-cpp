@@ -81,3 +81,11 @@ After filtering: `"tabacat"`
 | **Space** | O(n) — filtered string can be up to length n |
 
 > Uses O(n) extra space for the filtered string. Can we avoid that?
+
+---
+
+## `isalnum` and `tolower`
+
+- `isalnum(c)` returns non-zero if `c` is a letter (a-z, A-Z) or digit (0-9)
+- `tolower(c)` converts uppercase to lowercase, leaves others unchanged
+- Both are from `<cctype>` — included by default in competitive programming
