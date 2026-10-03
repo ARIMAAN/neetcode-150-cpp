@@ -29,6 +29,16 @@ Explanation: "tabacat" is not a palindrome
 
 ---
 
+## Related Problems
+
+| Problem | Connection |
+|---------|------------|
+| [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | Same two-pointer idea on a linked list |
+| [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | Expand around center |
+| [680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | Can delete at most one character |
+
+---
+
 ## Approaches
 
 | # | Approach | Time | Space | File |
