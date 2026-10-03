@@ -48,6 +48,11 @@ Explanation: "tabacat" is not a palindrome
 
 ---
 
-## Key Takeaway
+## Two Pointers Pattern
 
-> Two pointers is the go-to pattern for palindrome checks. The in-place version skips non-alphanumeric characters on the fly instead of building a new string.
+This problem is a classic intro to the **two pointers** technique:
+- One pointer starts at the left, one at the right
+- They move toward each other
+- Stop when they meet or cross
+
+Used in: palindrome check, two sum on sorted array, container with most water, trapping rain water.
