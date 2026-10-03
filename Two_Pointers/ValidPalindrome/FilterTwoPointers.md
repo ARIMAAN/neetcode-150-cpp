@@ -93,6 +93,8 @@ After filtering: `"tabacat"`
 | **Time** | O(n) — one pass to filter, one pass to check |
 | **Space** | O(n) — filtered string can be up to length n |
 
+> In the worst case (all alphanumeric), filtered string is same length as input.
+
 > Uses O(n) extra space for the filtered string. Can we avoid that?
 
 ---
