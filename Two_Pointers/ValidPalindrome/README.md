@@ -35,3 +35,9 @@ Explanation: "tabacat" is not a palindrome
 |---|----------|------|-------|------|
 | 1 | Filter + Two Pointers | O(n) | O(n) | [FilterTwoPointers.md](./FilterTwoPointers.md) |
 | 2 | Two Pointers In-Place ✅ | O(n) | O(1) | [TwoPointersInPlace.md](./TwoPointersInPlace.md) |
+
+---
+
+## Key Takeaway
+
+> Two pointers is the go-to pattern for palindrome checks. The in-place version skips non-alphanumeric characters on the fly instead of building a new string.
