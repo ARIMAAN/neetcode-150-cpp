@@ -73,6 +73,17 @@ After filtering: `"tabacat"`
 
 ---
 
+## Edge Cases
+
+| Case | Output | Note |
+|------|--------|------|
+| All non-alphanumeric `"!!!"` | `true` | filtered string is empty, vacuously a palindrome |
+| Single char `"a"` | `true` | left never < right |
+| Single alphanumeric in noise `"a!!"` | `true` | only one char after filtering |
+| Mixed case `"Aa"` | `true` | tolower makes them equal |
+
+---
+
 ## Complexity
 
 | | |
