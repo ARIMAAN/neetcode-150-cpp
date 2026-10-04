@@ -110,6 +110,8 @@ If sum < target:
 Each step eliminates one element from consideration → O(n) total.
 ```
 
+> This is essentially a binary search idea applied to pairs. We're narrowing the search space by one element each step.
+
 ---
 
 ## Edge Cases
