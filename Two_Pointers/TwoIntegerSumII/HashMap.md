@@ -55,3 +55,9 @@ public:
 | **Space** | O(n) — violates the O(1) space constraint |
 
 > ⚠️ Doesn't satisfy the problem's O(1) space requirement. Use two pointers instead.
+
+---
+
+## Why Not Use This Here?
+
+The problem explicitly says O(1) space. Also, the sorted property is a strong hint that two pointers is the intended approach. Hash map ignores the sorted order entirely.
