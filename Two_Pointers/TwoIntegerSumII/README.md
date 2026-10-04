@@ -35,6 +35,16 @@ Output: [1,2]   (1 + 2 = 3)
 
 ---
 
+## Related Problems
+
+| Problem | Connection |
+|---------|------------|
+| [1. Two Sum](https://leetcode.com/problems/two-sum/) | Unsorted version, needs hash map |
+| [15. 3Sum](https://leetcode.com/problems/3sum/) | Fix one element, two pointers for the rest |
+| [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Same two pointer shrinking pattern |
+
+---
+
 ## Key Insight
 
 > The array is **sorted** — this is the hint. A sorted array lets us use two pointers: if the sum is too big, move right pointer left. If too small, move left pointer right.
