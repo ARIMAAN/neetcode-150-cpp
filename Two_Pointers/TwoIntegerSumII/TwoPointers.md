@@ -60,6 +60,8 @@ public:
 };
 ```
 
+> Note: `left + 1` and `right + 1` because the problem wants 1-indexed output.
+
 ---
 
 ## Dry Run
