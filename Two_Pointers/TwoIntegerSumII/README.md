@@ -38,3 +38,14 @@ Output: [1,2]   (1 + 2 = 3)
 ## Key Insight
 
 > The array is **sorted** — this is the hint. A sorted array lets us use two pointers: if the sum is too big, move right pointer left. If too small, move left pointer right.
+
+---
+
+## Difference From Two Sum I
+
+| | Two Sum I | Two Sum II |
+|--|-----------|------------|
+| Array sorted? | No | Yes |
+| Space allowed | O(n) | O(1) |
+| Approach | Hash map | Two pointers |
+| Indices | 0-indexed | 1-indexed |
