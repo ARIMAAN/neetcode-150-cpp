@@ -124,6 +124,12 @@ Each step eliminates one element from consideration → O(n) total.
 
 ---
 
+## What About Duplicates?
+
+Duplicates are fine. The problem guarantees exactly one valid solution, so even if there are duplicate values, the two pointers will land on the correct pair. We never need to skip duplicates here unlike in 3Sum.
+
+---
+
 ## Complexity
 
 | | |
