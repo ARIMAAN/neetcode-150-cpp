@@ -30,6 +30,8 @@ left=0 (val=1), right=1 (val=2)
 sum = 3 == 3 → return [1, 2]  ✅
 ```
 
+> Key: sorted order means moving left pointer always increases sum, moving right pointer always decreases sum. So every move is a deliberate decision, not a guess.
+
 ---
 
 ## Code
