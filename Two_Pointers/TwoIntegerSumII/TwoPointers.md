@@ -139,6 +139,8 @@ Duplicates are fine. The problem guarantees exactly one valid solution, so even 
 | **Time** | O(n) — at most n steps, each pointer moves inward |
 | **Space** | O(1) — just two integer pointers |
 
+> In the best case (answer at the two ends), it's O(1). Worst case is O(n) when pointers have to travel all the way to the middle.
+
 ---
 
 ## Comparison
