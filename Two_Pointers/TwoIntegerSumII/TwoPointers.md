@@ -13,6 +13,8 @@ Since the array is sorted, place one pointer at the start and one at the end. Ch
 
 The sorted order guarantees we'll always find the answer.
 
+> This is the classic two pointers on sorted array pattern. Once you see "sorted array + find pair", this should be the first thing that comes to mind.
+
 ---
 
 ## Why This Works
