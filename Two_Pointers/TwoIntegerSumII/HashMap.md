@@ -47,6 +47,17 @@ public:
 
 ---
 
+**Input:** `numbers = [2,7,11,15]`, `target = 9`
+
+| i | numbers[i] | diff | in map? | map after |
+|---|------------|------|---------|----------|
+| 0 | 2 | 7 | ❌ | {2:1} |
+| 1 | 7 | 2 | ✅ | return [1, 2] |
+
+**Output:** `[1,2]` ✅
+
+---
+
 ## Complexity
 
 | | |
