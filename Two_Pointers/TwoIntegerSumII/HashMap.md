@@ -10,6 +10,8 @@ Same as Two Sum I — store each number and its index in a map. For each element
 
 Works, but uses O(n) space which violates the constraint here.
 
+> Tried this first since I already knew Two Sum I. But the problem says O(1) space so had to think of something better.
+
 ---
 
 ## Code
