@@ -18,6 +18,8 @@ Sorting also makes duplicate skipping trivial — duplicates are adjacent, so ju
 2. Makes duplicate detection easy — same values are adjacent
 3. Early termination — if `nums[i] > 0`, no triplet can sum to 0 (all remaining are ≥ nums[i])
 
+> Without sorting, detecting duplicates would require a hash set which adds O(n) space. Sorting makes it O(1).
+
 ---
 
 ## Algorithm
