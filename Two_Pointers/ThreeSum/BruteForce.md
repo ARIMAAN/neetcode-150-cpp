@@ -8,6 +8,8 @@
 
 Try every combination of three indices. If they sum to 0, add to result. Use a set to avoid duplicate triplets.
 
+> Straightforward but slow. Good for verifying the optimal solution on small inputs.
+
 ---
 
 ## Code
