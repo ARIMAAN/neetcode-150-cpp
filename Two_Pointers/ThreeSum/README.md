@@ -42,3 +42,16 @@ Output: [[0,0,0]]
 ## Key Insight
 
 > Fix one element, then use two pointers on the rest (like Two Sum II). Sort first to enable two pointers and make duplicate skipping easy.
+
+---
+
+## Why Is Duplicate Skipping Tricky?
+
+Consider `[-1,-1,-1,0,1,2]`:
+- i=0 gives triplet [-1,0,1]
+- i=1 is also -1 → would give same triplet again
+- i=2 is also -1 → same again
+
+We skip i=1 and i=2 with `if (i > 0 && nums[i] == nums[i-1]) continue`.
+
+Same logic applies to left and right pointers after finding a valid triplet.
