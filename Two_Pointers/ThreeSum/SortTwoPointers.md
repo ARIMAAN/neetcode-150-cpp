@@ -10,6 +10,8 @@ Sort the array. Fix one element `nums[i]`, then use two pointers on the remainin
 
 Sorting also makes duplicate skipping trivial — duplicates are adjacent, so just skip them.
 
+> The key realization: 3Sum = fix one + Two Sum II. Once you see that, the rest follows naturally.
+
 ---
 
 ## Why Sort First?
