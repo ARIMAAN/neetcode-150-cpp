@@ -136,6 +136,8 @@ if (nums[i] > 0) break;
 
 Since array is sorted, if `nums[i] > 0`, then `nums[left] >= nums[i] > 0` and `nums[right] >= nums[left] > 0`. Sum of three positives can never be 0.
 
+> This is a nice optimization. Without it the code still works, just does unnecessary iterations.
+
 ---
 
 ## Edge Cases
