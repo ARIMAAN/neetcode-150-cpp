@@ -128,6 +128,8 @@ Skip duplicates on right:
 Then move both inward: left++, right--
 ```
 
+> Common bug: forgetting to do the final `left++; right--` after skipping. The while loops only skip duplicates, they don't advance past the current valid position.
+
 ---
 
 ## Early Termination
