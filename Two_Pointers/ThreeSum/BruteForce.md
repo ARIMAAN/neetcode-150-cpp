@@ -60,3 +60,9 @@ Checking all triplets that sum to 0:
 | **Space** | O(1) ignoring output |
 
 > ⚠️ TLE for n=3000. Need O(n²) solution.
+
+---
+
+## Why Use a Set Here?
+
+Without sorting the triplet before inserting, `[-1,0,1]` and `[0,1,-1]` would be treated as different. Sorting each triplet + using a set handles deduplication automatically, at the cost of extra overhead.
