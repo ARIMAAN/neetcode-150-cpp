@@ -48,25 +48,24 @@ public:
         sort(nums.begin(), nums.end());
         vector<vector<int>> res;
 
-        for (int i = 0; i < nums.size() - 2; i++) {
-            if (nums[i] > 0) break;                        // all remaining > 0, can't sum to 0
-            if (i > 0 && nums[i] == nums[i - 1]) continue; // skip duplicate i
+        for (int i = 0; i < nums.size(); i++) {
+            if (nums[i] > 0) break;                         // all remaining > 0, can't sum to 0
+            if (i > 0 && nums[i] == nums[i - 1]) continue;  // skip duplicate i
 
-            int left = i + 1, right = nums.size() - 1;
+            int l = i + 1, r = nums.size() - 1;
 
-            while (left < right) {
-                int sum = nums[i] + nums[left] + nums[right];
+            while (l < r) {
+                int sum = nums[i] + nums[l] + nums[r];
 
-                if (sum == 0) {
-                    res.push_back({nums[i], nums[left], nums[right]});
-                    while (left < right && nums[left] == nums[left + 1]) left++;   // skip dup left
-                    while (left < right && nums[right] == nums[right - 1]) right--; // skip dup right
-                    left++;
-                    right--;
-                } else if (sum > 0) {
-                    right--;
+                if (sum > 0) {
+                    r--;
+                } else if (sum < 0) {
+                    l++;
                 } else {
-                    left++;
+                    res.push_back({nums[i], nums[l], nums[r]});
+                    l++;
+                    r--;
+                    while (l < r && nums[l] == nums[l - 1]) l++; // skip dup left
                 }
             }
         }
@@ -74,6 +73,8 @@ public:
     }
 };
 ```
+
+> Cleaner version: only skips left duplicates explicitly after finding a triplet. Right duplicates are handled naturally by the outer while loop on the next iteration.
 
 ---
 
