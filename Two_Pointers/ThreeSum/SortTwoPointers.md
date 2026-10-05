@@ -157,6 +157,23 @@ Since array is sorted, if `nums[i] > 0`, then `nums[left] >= nums[i] > 0` and `n
 
 ---
 
+## What If All Elements Are The Same?
+
+```
+nums = [1,1,1,1]  → sorted: [1,1,1,1]
+i=0: nums[0]=1 > 0 → break immediately
+Output: []
+
+nums = [-1,-1,-1,-1]  → sorted: [-1,-1,-1,-1]
+i=0: left=1, right=3, sum=-3 < 0 → left++
+     left=2, right=3, sum=-3 < 0 → left++
+     left=right, stop
+i=1: duplicate of i=0 → skip
+Output: []
+```
+
+---
+
 ## Complexity
 
 | | |
