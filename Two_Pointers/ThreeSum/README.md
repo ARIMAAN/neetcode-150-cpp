@@ -55,6 +55,12 @@ Output: [[0,0,0]]
 
 ---
 
+## Why Can't We Do Better Than O(n²)?
+
+The output itself can have O(n²) triplets in the worst case (e.g. many zeros). So just writing the output takes O(n²) time. O(n²) is optimal here.
+
+---
+
 ## Why Is Duplicate Skipping Tricky?
 
 Consider `[-1,-1,-1,0,1,2]`:
