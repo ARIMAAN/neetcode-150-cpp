@@ -161,3 +161,5 @@ Since array is sorted, if `nums[i] > 0`, then `nums[left] >= nums[i] > 0` and `n
 |--|--|
 | **Time** | O(n²) — O(n log n) sort + O(n²) two pointer loop |
 | **Space** | O(1) — ignoring output array |
+
+> The outer loop runs n times. For each i, the two pointer inner loop runs at most n times. So total = O(n²). Sorting is O(n log n) which is dominated by O(n²).
