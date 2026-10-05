@@ -39,6 +39,16 @@ Output: [[0,0,0]]
 
 ---
 
+## Related Problems
+
+| Problem | Connection |
+|---------|------------|
+| [167. Two Sum II](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Inner loop of 3Sum |
+| [18. 4Sum](https://leetcode.com/problems/4sum/) | Same pattern, one more outer loop |
+| [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/) | Same structure, track closest sum |
+
+---
+
 ## Key Insight
 
 > Fix one element, then use two pointers on the rest (like Two Sum II). Sort first to enable two pointers and make duplicate skipping easy.
