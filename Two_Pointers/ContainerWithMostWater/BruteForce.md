@@ -54,3 +54,9 @@ Max found = 49 ✅
 | **Space** | O(1) |
 
 > ⚠️ TLE for n = 10^5.
+
+---
+
+## What Makes This Hard To Optimize?
+
+The brute force checks all O(n²) pairs. The insight to get to O(n) is realizing we don't need to check all pairs — we can eliminate entire groups of pairs at once using the greedy argument.
