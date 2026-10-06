@@ -39,6 +39,15 @@ Output: 1
 
 ---
 
+## Related Problems
+
+| Problem | Connection |
+|---------|------------|
+| [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Similar two pointer idea, harder version |
+| [167. Two Sum II](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Same two pointer shrinking pattern |
+
+---
+
 ## Key Insight
 
 > Always move the pointer with the **shorter** height. Moving the taller one can only decrease or maintain width while the height is still bounded by the shorter — so it can never improve the area.
