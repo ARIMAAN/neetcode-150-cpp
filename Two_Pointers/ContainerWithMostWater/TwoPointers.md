@@ -10,6 +10,8 @@ Start with the widest possible container — left at 0, right at n-1. Compute ar
 
 Why? The area is limited by the shorter side. Moving the taller side inward reduces width while the height is still capped by the shorter — guaranteed worse or equal. Moving the shorter side is the only chance to find a taller boundary that compensates for the reduced width.
 
+> This clicked for me when I realized: the shorter line is the bottleneck. No point keeping it and moving the taller one.
+
 ---
 
 ## Why Moving The Shorter Side Is Correct
