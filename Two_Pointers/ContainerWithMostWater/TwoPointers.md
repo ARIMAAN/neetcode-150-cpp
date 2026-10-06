@@ -104,6 +104,8 @@ public:
 
 When `height[left] == height[right]`, moving either pointer is fine — both sides are the same height so neither has an advantage. We just pick right by convention.
 
+> Could also do `left++` here. Doesn't matter — both give correct answer.
+
 ---
 
 ## Edge Cases
