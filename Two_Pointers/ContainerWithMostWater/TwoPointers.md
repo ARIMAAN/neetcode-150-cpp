@@ -125,3 +125,5 @@ When `height[left] == height[right]`, moving either pointer is fine — both sid
 |--|--|
 | **Time** | O(n) — each pointer moves inward at most n times total |
 | **Space** | O(1) — just two pointers and a running max |
+
+> Left and right together make at most n-1 moves total (they start n-1 apart and each move brings them 1 step closer). So the while loop runs exactly n-1 times.
