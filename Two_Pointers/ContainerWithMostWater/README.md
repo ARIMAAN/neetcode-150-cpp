@@ -42,3 +42,9 @@ Output: 1
 ## Key Insight
 
 > Always move the pointer with the **shorter** height. Moving the taller one can only decrease or maintain width while the height is still bounded by the shorter — so it can never improve the area.
+
+---
+
+## Why Start With Widest Container?
+
+Starting at both ends gives the maximum possible width. From there, we can only decrease width, so we need to compensate by finding taller lines. This is why we always move the shorter pointer — it's the only way height can increase.
