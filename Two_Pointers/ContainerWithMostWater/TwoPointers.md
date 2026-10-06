@@ -29,6 +29,8 @@ If we move left inward:
   → this is the only hope
 ```
 
+> This is a greedy argument. We're not missing any better solution because moving the taller side is provably never better.
+
 ---
 
 ## Code
