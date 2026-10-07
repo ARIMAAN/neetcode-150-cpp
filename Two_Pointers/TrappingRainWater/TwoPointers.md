@@ -31,6 +31,8 @@ If rightMax <= leftMax:
   → process right, move right--
 ```
 
+> This is the same greedy idea as Container With Most Water — always process the side with the smaller max because the other side is guaranteed to not be the bottleneck.
+
 ---
 
 ## Code
