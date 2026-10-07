@@ -107,6 +107,20 @@ After `leftMax = max(leftMax, height[left])`, `leftMax` is guaranteed to be ≥ 
 
 ---
 
+## What About All Same Heights?
+
+```
+height = [3,3,3]
+left=0, right=2, leftMax=3, rightMax=3
+step1: lM>=rM → right--, rightMax=max(3,3)=3, water+=3-3=0
+step2: left=right → stop
+Output: 0
+```
+
+Flat surface traps no water. ✅
+
+---
+
 ## Complexity
 
 | | |
