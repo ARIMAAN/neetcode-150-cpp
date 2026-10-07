@@ -67,3 +67,14 @@ Total = 0+0+2+0+2+3+2+0+0+0 = **9** ✅
 | **Space** | O(n) — two extra arrays |
 
 > Clean and easy to understand. Can we eliminate the extra arrays?
+
+---
+
+## Order Matters: Update Max Before Adding Water
+
+```cpp
+leftMax[i] = max(leftMax[i-1], height[i]);
+water += min(leftMax[i], rightMax[i]) - height[i];
+```
+
+The max must include the current bar itself, otherwise we'd compute negative water at peaks.
