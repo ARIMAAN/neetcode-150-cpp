@@ -32,6 +32,27 @@ water[i] = min(maxLeft[i], maxRight[i]) - height[i]
 
 ---
 
+## Visual
+
+```
+height = [0,2,0,3,1,0,1,3,2,1]
+
+         _       _
+   _     | |     | |_
+   |_  _ | | _ _ | | |_
+   | || || || || || |  |
+   0  2  0  3  1  0  1  3  2  1
+
+water trapped (shown as ~):
+         _       _
+   _~~~~~| |~~~~~| |_
+   |_~~_~| |~_~_~| |~|_
+```
+
+Total = 9
+
+---
+
 ## Approaches
 
 | # | Approach | Time | Space | File |
