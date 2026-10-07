@@ -62,6 +62,15 @@ Total = 9
 
 ---
 
+## Related Problems
+
+| Problem | Connection |
+|---------|------------|
+| [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Simpler version, same two pointer idea |
+| [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Prefix/suffix array pattern |
+
+---
+
 ## Key Insight
 
 > If `leftMax < rightMax`, the water at the left pointer is determined by `leftMax` (the right side is guaranteed taller). Move left inward. Same logic applies symmetrically for the right side.
