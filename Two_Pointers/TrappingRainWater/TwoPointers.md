@@ -91,6 +91,8 @@ Initial: left=0, right=9, leftMax=0, rightMax=1
 
 After `leftMax = max(leftMax, height[left])`, `leftMax` is guaranteed to be ≥ `height[left]`. So the subtraction never goes negative. No need for a separate check.
 
+> This is the same reason we update `leftMax` BEFORE computing water, not after.
+
 ---
 
 ## Edge Cases
