@@ -55,3 +55,9 @@ public:
 | **Space** | O(1) |
 
 > ⚠️ TLE for n = 10^5.
+
+---
+
+## What's The Redundancy?
+
+For a fixed buy day `i`, we check all sell days `j > i`. But we already know the best sell day for `i` is the maximum price after `i`. The greedy approach finds this without the inner loop.
