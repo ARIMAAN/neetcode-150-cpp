@@ -92,6 +92,8 @@ This can also be seen as a sliding window:
     L           R  → profit = 4-1 = 3
 ```
 
+> This is exactly the same pattern as Container With Most Water — two pointers, one tracking the best left boundary.
+
 ---
 
 ## Edge Cases
