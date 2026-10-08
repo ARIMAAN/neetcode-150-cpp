@@ -8,6 +8,8 @@
 
 Try every pair (buy day, sell day) where buy < sell. Track the maximum profit.
 
+> First thing anyone tries. Gets the right answer but too slow for large inputs.
+
 ---
 
 ## Code
