@@ -37,3 +37,9 @@ Output: 0   (prices only decrease)
 ## Key Insight
 
 > Track the minimum price seen so far. At each day, the best profit is `currentPrice - minSoFar`. Keep a running max of that.
+
+---
+
+## Why Is This In Sliding Window?
+
+The left pointer is the buy day (minimum price), the right pointer scans forward as the sell day. When we find a price lower than left, we slide left forward to that position. This is the classic sliding window pattern on an array.
