@@ -103,6 +103,18 @@ This can also be seen as a sliding window:
 
 ---
 
+## What If prices Has Only One Element?
+
+```cpp
+int buyPrice = prices[0]; // set to only element
+for (int i = 1; i < prices.size(); i++) // loop never runs
+return profit; // returns 0
+```
+
+Handled naturally — no special case needed.
+
+---
+
 ## Complexity
 
 | | |
