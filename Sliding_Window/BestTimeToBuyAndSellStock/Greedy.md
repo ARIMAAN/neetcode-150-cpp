@@ -121,3 +121,5 @@ Handled naturally — no special case needed.
 |--|--|
 | **Time** | O(n) — single pass |
 | **Space** | O(1) — just two variables |
+
+> Compare to brute force: we eliminated the inner loop by realizing we only need the running minimum, not every past price.
