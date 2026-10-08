@@ -50,6 +50,12 @@ Output: 0   (prices only decrease)
 
 ---
 
+## Why Return 0 When No Profit?
+
+`profit` is initialized to `0`. If all prices decrease, `prices[i] - buyPrice` is always ≤ 0, so `max(profit, ...)` never updates it. We naturally return 0 without any special case.
+
+---
+
 ## Why Is This In Sliding Window?
 
 The left pointer is the buy day (minimum price), the right pointer scans forward as the sell day. When we find a price lower than left, we slide left forward to that position. This is the classic sliding window pattern on an array.
