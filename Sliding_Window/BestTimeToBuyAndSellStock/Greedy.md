@@ -10,6 +10,8 @@ Track the minimum price seen so far (`buyPrice`). For each day, compute profit i
 
 We never need to look back — if we find a lower price, we update our buy point. If we find a higher price, we check if it gives better profit.
 
+> Thought process: at each day I ask two questions — is this cheaper than what I planned to buy at? If yes update buy. Is selling today more profitable than my best so far? If yes update profit.
+
 ---
 
 ## Why This Is Correct
