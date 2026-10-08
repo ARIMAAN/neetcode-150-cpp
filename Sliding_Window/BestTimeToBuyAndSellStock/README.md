@@ -34,6 +34,16 @@ Output: 0   (prices only decrease)
 
 ---
 
+## Related Problems
+
+| Problem | Connection |
+|---------|------------|
+| [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Multiple transactions allowed |
+| [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | At most 2 transactions |
+| [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | DP variant |
+
+---
+
 ## Key Insight
 
 > Track the minimum price seen so far. At each day, the best profit is `currentPrice - minSoFar`. Keep a running max of that.
