@@ -16,6 +16,8 @@ We never need to look back — if we find a lower price, we update our buy point
 
 At every index `i`, the best possible profit ending at `i` is `prices[i] - min(prices[0..i])`. We maintain that minimum on the fly, so we never miss the optimal buy point.
 
+> We never need to reconsider a past sell day. If today's price is lower than our buy price, it's strictly better to buy today instead — any future sell will give more profit from today's price than from the old buy price.
+
 ---
 
 ## Code
