@@ -20,7 +20,7 @@ This repository contains my structured solutions to the **NeetCode 150** problem
 |---|-------|----------|--------|
 | 1 | [Arrays & Hashing](./Arrays_and_Hashing/) | 9 | ✅ Done |
 | 2 | [Two Pointers](./Two_Pointers/) | 5 | ✅ Done |
-| 3 | [Sliding Window](./Sliding_Window/) | 6 | ⬜ Not Started |
+| 3 | [Sliding Window](./Sliding_Window/) | 6 | 🔄 In Progress |
 | 4 | [Stack](./Stack/) | 7 | ⬜ Not Started |
 | 5 | [Binary Search](./Binary_Search/) | 7 | ⬜ Not Started |
 | 6 | [Linked List](./Linked_List/) | 11 | ⬜ Not Started |
@@ -44,8 +44,8 @@ This repository contains my structured solutions to the **NeetCode 150** problem
 | Metric | Count |
 |--------|-------|
 | Total Problems | 150 |
-| Solved | 15 |
-| Remaining | 135 |
+| Solved | 16 |
+| Remaining | 134 |
 
 ---
 
