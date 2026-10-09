@@ -82,6 +82,8 @@ Final answer: **3** ✅
 | `"abcdef"` | `6` | all unique, window grows to full string |
 | `"aaaaaa"` | `1` | all same, window always size 1 |
 
+> For empty string: `s.size()` returns 0, the for loop condition `right < 0` is false immediately, `maxLen` stays 0. Correct.
+
 ## Why the While Loop (not if)?
 
 When a duplicate is found, we shrink left one step at a time.
