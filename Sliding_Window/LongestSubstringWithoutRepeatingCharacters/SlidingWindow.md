@@ -90,3 +90,11 @@ But `while` is the standard pattern and works correctly regardless.
 
 - **Time**: O(n) — each character is added and removed from the set at most once
 - **Space**: O(min(n, 26)) — set holds at most the alphabet size (or charset size)
+
+## Comparison with Brute Force
+
+| | Brute Force | Sliding Window |
+|---|---|---|
+| Time | O(n²) | O(n) |
+| Space | O(n) | O(min(n, charset)) |
+| Idea | restart every time | reuse previous work |
