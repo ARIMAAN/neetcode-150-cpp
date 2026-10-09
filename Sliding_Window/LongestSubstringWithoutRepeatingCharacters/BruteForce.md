@@ -50,6 +50,14 @@ Final answer: **3**
 - **Time**: O(n²) — two nested loops
 - **Space**: O(n) — set can hold up to n characters
 
+## Edge Cases
+
+| Input | Output |
+|-------|--------|
+| `""` | `0` |
+| `"a"` | `1` |
+| `"abcdef"` | `6` |
+
 ## Why This Is Slow
 
 For `n = 10^5`, this is `10^10` operations — way too slow (TLE).
