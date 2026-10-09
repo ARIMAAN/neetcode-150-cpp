@@ -57,3 +57,9 @@ A set gives us that — and we can add/remove as the window expands/shrinks.
 - [Best Time to Buy and Sell Stock (#121)](../BestTimeToBuyAndSellStock/) — sliding window on array
 - [Longest Repeating Character Replacement (#424)](../LongestRepeatingCharacterReplacement/) — sliding window with frequency count
 - [Permutation in String (#567)](../PermutationInString/) — fixed-size sliding window
+
+## Thought Process
+
+When I see "longest substring with some property" — that's almost always sliding window.
+The key question is: when do I shrink the window?
+Here: shrink when a duplicate enters. Simple condition — simple solution.
