@@ -55,6 +55,9 @@ Final answer: **3**
 - **Time**: O(n²) — two nested loops
 - **Space**: O(n) — set can hold up to n characters
 
+> Best case is O(n) if every character is unique (inner loop never breaks early).
+> Worst case is O(n²) for strings like `"abcabc..."` where duplicates appear regularly.
+
 ## Edge Cases
 
 | Input | Output |
