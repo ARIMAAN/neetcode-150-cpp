@@ -37,6 +37,9 @@ Use a sliding window with a set to track characters in the current window.
 When a duplicate is found, shrink from the left until it's gone.
 The answer is the max window size seen at any point.
 
+> The window `[left, right]` always represents a valid substring with no duplicates.
+> We never need to restart from scratch — just slide.
+
 ---
 
 ## Why a Set and Not Just Counting?
