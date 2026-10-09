@@ -18,6 +18,9 @@ At each step, the window is always valid — so just track the max size.
 5. Update `maxLen = max(maxLen, right - left + 1)`
 6. Return `maxLen`
 
+> Window size = `right - left + 1`.
+> We update maxLen AFTER inserting `s[right]`, so the current char is always counted.
+
 ## Code
 
 ```cpp
