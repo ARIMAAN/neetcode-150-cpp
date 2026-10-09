@@ -12,6 +12,8 @@ Track the maximum length among all valid substrings.
 3. If unique, update `maxLen`
 4. Return `maxLen`
 
+> The inner loop breaks early when a duplicate is found — no need to check longer substrings starting at `i`.
+
 ## Code
 
 ```cpp
