@@ -6,6 +6,9 @@ Maintain a window `[left, right]` where all characters are unique.
 Expand right every step. If `s[right]` is already in the window, shrink from left until it's removed.
 At each step, the window is always valid — so just track the max size.
 
+> This is the classic "variable size sliding window" pattern:
+> expand when valid, shrink when invalid, track the best.
+
 ## Algorithm
 
 1. Use an `unordered_set<char>` to track chars in current window
