@@ -47,6 +47,9 @@ The answer is the max window size seen at any point.
 We need O(1) lookup to check if a character is already in the window.
 A set gives us that — and we can add/remove as the window expands/shrinks.
 
+> An array of size 128 (ASCII) also works and is slightly faster in practice.
+> `int freq[128] = {0}` — check `freq[s[right]] > 0` instead of `set.count()`.
+
 ---
 
 ## Related Problems
