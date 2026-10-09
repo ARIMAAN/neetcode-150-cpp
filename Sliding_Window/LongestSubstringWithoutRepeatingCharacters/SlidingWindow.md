@@ -86,6 +86,9 @@ but the while is the correct pattern for sliding window shrinking).
 Actually with a set, one removal is always enough since the set only holds unique chars.
 But `while` is the standard pattern and works correctly regardless.
 
+> Think of it this way: `while` = "keep shrinking until the window is valid again".
+> This same pattern works for harder sliding window problems too.
+
 ## Complexity
 
 - **Time**: O(n) — each character is added and removed from the set at most once
