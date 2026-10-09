@@ -5,6 +5,9 @@
 Try every possible substring. For each one, check if all characters are unique.
 Track the maximum length among all valid substrings.
 
+> Substring = contiguous. Don't confuse with subsequence (non-contiguous).
+> `"pwke"` is a subsequence of `"pwwkew"`, not a substring.
+
 ## Algorithm
 
 1. For every starting index `i`, for every ending index `j >= i`
