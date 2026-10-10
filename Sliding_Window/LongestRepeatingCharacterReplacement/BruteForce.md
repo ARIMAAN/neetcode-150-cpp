@@ -63,3 +63,8 @@ Final answer: **5** ✅
 
 For `n = 100,000`, O(n²) = 10^10 operations — TLE.
 We're recomputing frequency from scratch for every starting index.
+
+> The sliding window fixes this by never resetting the freq array.
+> When we move `left` forward, we just decrement one entry.
+> When we move `right` forward, we just increment one entry.
+> Total work = O(n) instead of O(n²).
