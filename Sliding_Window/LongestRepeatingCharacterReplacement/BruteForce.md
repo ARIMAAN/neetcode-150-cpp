@@ -5,6 +5,9 @@
 Try every possible substring. For each substring, find the most frequent character.
 The replacements needed = `length - maxFreq`. If that's `<= k`, it's valid — update the answer.
 
+> The key observation: we always want to keep the most frequent character and replace everything else.
+> So we only need to know the max frequency, not which character it is.
+
 ## Algorithm
 
 1. For every pair `(i, j)`, consider substring `s[i..j]`
