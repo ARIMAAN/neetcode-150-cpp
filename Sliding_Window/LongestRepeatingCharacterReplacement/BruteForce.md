@@ -53,6 +53,9 @@ int characterReplacement(string s, int k) {
 
 Final answer: **5** ✅
 
+> Notice at i=0, j=4: substring `"AAABA"` has 4 A's and 1 B.
+> replacements = 5 - 4 = 1 = k. Valid. This is the optimal window.
+
 ## Complexity
 
 - **Time**: O(n²) — two nested loops
