@@ -51,6 +51,10 @@ We want to keep as many of one character as possible and replace the rest.
 The best character to keep is the one that appears most — that minimizes replacements.
 So: `replacements needed = windowSize - count of most frequent char`.
 
+> This is a greedy argument: among all characters in the window,
+> keeping the majority character always gives the minimum number of replacements.
+> Keeping any other character would require more replacements.
+
 ---
 
 ## Related Problems
