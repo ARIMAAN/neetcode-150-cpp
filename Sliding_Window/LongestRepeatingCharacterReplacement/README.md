@@ -28,8 +28,11 @@ Return the length of the longest substring that contains only one distinct chara
 
 | Approach | Time | Space | Notes |
 |----------|------|-------|-------|
-| Brute Force | O(n² · 26) | O(26) | check every substring |
+| Brute Force | O(n²) | O(26) | check every substring |
 | Sliding Window | O(n) | O(26) | track max frequency char in window |
+
+> Both approaches use O(26) = O(1) space — just a fixed array for 26 uppercase letters.
+> The difference is entirely in time: O(n²) vs O(n).
 
 ---
 
