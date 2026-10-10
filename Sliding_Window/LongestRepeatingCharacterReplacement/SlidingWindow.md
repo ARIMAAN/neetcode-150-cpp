@@ -56,6 +56,8 @@ int characterReplacement(string s, int k) {
 
 Final answer: **4** ✅
 
+> At right=3: windowSize=4, maxFreq=2, replacements=2=k. Exactly at the limit — still valid.
+
 ## Dry Run — `"AAABABB"`, k = 1
 
 | right | s[r] | freq | maxFreq | windowSize | replacements | valid? | left | maxLen |
