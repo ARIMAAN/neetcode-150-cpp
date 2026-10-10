@@ -108,3 +108,9 @@ only prevents unnecessary shrinking. The window size never decreases below the c
 | Time | O(n²) | O(n) |
 | Space | O(1) | O(1) |
 | Key idea | restart every i | reuse freq, just slide |
+
+## Thought Process
+
+When I see "longest substring where we can change at most k characters" — sliding window.
+The validity condition `windowSize - maxFreq <= k` is the core insight.
+Once you have that, the sliding window template just plugs in.
