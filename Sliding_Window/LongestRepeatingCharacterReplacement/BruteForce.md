@@ -16,6 +16,9 @@ The replacements needed = `length - maxFreq`. If that's `<= k`, it's valid — u
 4. If `(j - i + 1) - maxFreq <= k`, update `maxLen`
 5. Return `maxLen`
 
+> We track `maxFreq` incrementally: after adding `s[j]`, update `maxFreq = max(maxFreq, freq[s[j]-'A'])`.
+> This avoids scanning all 26 entries every step, keeping inner loop O(1) instead of O(26).
+
 ## Code
 
 ```cpp
