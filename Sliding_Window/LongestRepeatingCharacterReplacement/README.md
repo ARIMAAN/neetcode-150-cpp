@@ -58,6 +58,10 @@ So: `replacements needed = windowSize - count of most frequent char`.
 > keeping the majority character always gives the minimum number of replacements.
 > Keeping any other character would require more replacements.
 
+> Formal proof: if char X appears `f` times in a window of size `L`,
+> replacing everything else costs `L - f`. This is minimized when `f` is maximized.
+> So we always pick the character with the highest frequency.
+
 ---
 
 ## Related Problems
