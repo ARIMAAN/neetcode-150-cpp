@@ -55,9 +55,12 @@ Final answer: **5** ✅
 
 ## Complexity
 
-- **Time**: O(n² · 26) — two loops + scanning freq array for max each time
+- **Time**: O(n²) — two nested loops
   - Can be O(n²) if we track maxFreq incrementally (as in code above)
 - **Space**: O(26) = O(1) — fixed size frequency array
+
+> Note: resetting `freq[26] = {0}` at the start of each outer loop iteration
+> is O(26) = O(1), so it doesn't change the overall complexity.
 
 ## Why This Is Slow
 
