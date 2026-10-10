@@ -6,6 +6,10 @@ Maintain a window `[left, right]`. Track the frequency of each character in the 
 The window is valid if `windowSize - maxFreq <= k`.
 If invalid, shrink from the left. Track the max valid window size.
 
+> Think of it this way: we're trying to find the largest window where
+> at most k characters are "outsiders" (not the dominant character).
+> Sliding window lets us check every possible window in O(n).
+
 ## Algorithm
 
 1. `freq[26] = {0}`, `left = 0`, `maxFreq = 0`, `maxLen = 0`
