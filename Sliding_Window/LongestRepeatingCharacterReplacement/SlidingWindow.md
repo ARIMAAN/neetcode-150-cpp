@@ -101,6 +101,10 @@ only prevents unnecessary shrinking. The window size never decreases below the c
 - **Time**: O(n) — each character added and removed from window at most once
 - **Space**: O(26) = O(1) — fixed size frequency array for uppercase letters
 
+> Even though we have a `while` loop inside the `for` loop,
+> `left` only ever moves forward — so total increments of `left` across the entire run = O(n).
+> Combined with O(n) increments of `right`, total work = O(2n) = O(n).
+
 ## Comparison
 
 | | Brute Force | Sliding Window |
