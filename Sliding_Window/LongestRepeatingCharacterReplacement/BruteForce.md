@@ -38,6 +38,9 @@ int characterReplacement(string s, int k) {
 }
 ```
 
+> We reset `freq[26] = {0}` at the start of each outer iteration.
+> This is O(26) = O(1) per reset, so it doesn't affect the O(n²) overall.
+
 ## Dry Run — `"AAABABB"`, k = 1
 
 | i | j | substring | maxFreq | replacements | valid? | maxLen |
