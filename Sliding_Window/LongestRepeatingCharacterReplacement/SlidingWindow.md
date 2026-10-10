@@ -73,6 +73,10 @@ We only grow `maxLen` when we find a genuinely larger valid window.
 This means `maxFreq` might be slightly stale — but it never causes a wrong answer,
 only prevents unnecessary shrinking. The window size never decreases below the current best.
 
+> This is a subtle but important optimization. Without it, we'd need to rescan
+> the entire window to find the new maxFreq after every shrink — making it O(n · 26).
+> With this trick, it stays O(n).
+
 ## Edge Cases
 
 | Input | k | Output | Reason |
