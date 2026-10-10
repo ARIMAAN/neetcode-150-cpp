@@ -40,6 +40,9 @@ where `maxFreq` is the count of the most frequent character in the window.
 
 If `L - maxFreq <= k`, the window is valid.
 
+> Example: window = `"AABAA"`, L=5, maxFreq=4 (A appears 4 times)
+> replacements needed = 5 - 4 = 1. If k >= 1, this window is valid.
+
 ---
 
 ## Why maxFreq Works
