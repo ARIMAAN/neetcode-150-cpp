@@ -16,6 +16,9 @@ If invalid, shrink from the left. Track the max valid window size.
    - Update `maxLen = max(maxLen, right - left + 1)`
 3. Return `maxLen`
 
+> The condition `(right - left + 1) - maxFreq > k` means:
+> "the number of non-dominant characters exceeds k" — we can't fix this window with k replacements.
+
 ## Code
 
 ```cpp
