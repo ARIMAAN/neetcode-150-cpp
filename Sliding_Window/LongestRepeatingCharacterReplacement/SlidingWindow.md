@@ -89,6 +89,9 @@ only prevents unnecessary shrinking. The window size never decreases below the c
 | `"ABCD"` | 0 | 1 | k=0, can't replace anything |
 | `"ABCD"` | 4 | 4 | can replace all, entire string valid |
 
+> When k=0: condition becomes `windowSize == maxFreq`, meaning all chars in window must be the same.
+> When k >= n: entire string is always valid, answer = n.
+
 ## Complexity
 
 - **Time**: O(n) — each character added and removed from window at most once
