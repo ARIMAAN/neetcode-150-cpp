@@ -42,6 +42,9 @@ int characterReplacement(string s, int k) {
 }
 ```
 
+> `s[right] - 'A'` maps 'A'→0, 'B'→1, ..., 'Z'→25.
+> This is how we use a plain array instead of a map — faster and simpler.
+
 ## Dry Run — `"XYYX"`, k = 2
 
 | right | s[r] | freq | maxFreq | windowSize | replacements | valid? | left | maxLen |
