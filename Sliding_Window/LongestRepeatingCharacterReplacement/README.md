@@ -65,3 +65,9 @@ So: `replacements needed = windowSize - count of most frequent char`.
 - [Longest Substring Without Repeating Characters (#3)](../LongestSubstringWithoutRepeatingCharacters/) — sliding window, shrink on duplicate
 - [Permutation in String (#567)](../PermutationInString/) — fixed-size sliding window
 - [Minimum Window Substring (#76)](../MinimumWindowSubstring/) — harder sliding window
+
+## Thought Process
+
+When I see "longest substring after at most k changes" — sliding window.
+The hard part is figuring out the validity condition: `windowSize - maxFreq <= k`.
+Once that clicks, the rest is just the standard expand/shrink template.
