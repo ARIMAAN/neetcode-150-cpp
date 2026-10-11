@@ -40,6 +40,9 @@ So we need to find a window in `s2` of length `len(s1)` with the exact same char
 Use a **fixed-size sliding window** of size `len(s1)` and slide it across `s2`.
 At each position, compare frequency arrays. If they match → found a permutation.
 
+> Two strings are anagrams ↔ their sorted forms are equal ↔ their freq arrays are equal.
+> Sorting would be O(n log n) per window. Freq array comparison is O(26) = O(1).
+
 ---
 
 ## Why Fixed-Size Window?
