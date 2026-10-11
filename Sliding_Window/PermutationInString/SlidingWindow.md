@@ -75,6 +75,9 @@ Return `false` ✅
 | s1 = `"a"`, s2 = `"a"` | `true` | single char match |
 | s1 = `"aab"`, s2 = `"ab"` | `false` | s1 longer than s2 |
 
+> The `if (s1.size() > s2.size()) return false` guard at the top prevents
+> the loop from running with a negative window size (which would cause UB with unsigned types).
+
 ## Why `equal()` Instead of Manual Loop?
 
 `equal(freq1, freq1+26, freq2)` compares two arrays element by element — O(26) = O(1).
