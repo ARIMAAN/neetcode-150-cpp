@@ -89,6 +89,9 @@ Could also do a manual loop, but `equal` is cleaner.
 - **Time**: O(n + m) — build initial window O(n), slide O(m), each comparison O(26) = O(1)
 - **Space**: O(26) = O(1) — two fixed frequency arrays
 
+> Total window positions = `m - n + 1`. Each slide is O(1) update + O(26) compare.
+> So total = O(n) + O(26 · (m - n + 1)) = O(n + m).
+
 ## Comparison
 
 | | Brute Force | Sliding Window |
