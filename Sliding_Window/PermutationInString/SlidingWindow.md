@@ -80,6 +80,10 @@ Return `false` ✅
 `equal(freq1, freq1+26, freq2)` compares two arrays element by element — O(26) = O(1).
 Could also do a manual loop, but `equal` is cleaner.
 
+> Alternative: maintain a `matches` counter tracking how many of the 26 chars
+> have equal frequency in both windows. When `matches == 26`, return true.
+> This avoids calling `equal()` every step but adds code complexity.
+
 ## Complexity
 
 - **Time**: O(n + m) — build initial window O(n), slide O(m), each comparison O(26) = O(1)
