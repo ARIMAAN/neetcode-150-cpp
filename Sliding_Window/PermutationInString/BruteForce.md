@@ -45,3 +45,6 @@ Return `true`
 For `s1 = "abcdefghij"` (10 chars), that's 10! = 3,628,800 permutations.
 For `s1` of length 20, it's 20! ≈ 2.4 × 10^18. Completely unusable.
 We don't need to enumerate permutations — we just need to compare frequencies.
+
+> The key realization: two strings are anagrams iff their freq arrays match.
+> We never need to look at actual permutations at all.
