@@ -99,3 +99,9 @@ Could also do a manual loop, but `equal` is cleaner.
 | Time | O(n! · m) | O(n + m) |
 | Space | O(n) | O(1) |
 | Key idea | enumerate permutations | compare frequencies |
+
+## Thought Process
+
+Saw "permutation" and thought about generating them — immediately realized that's factorial.
+Then thought: permutation = anagram = same freq array.
+Fixed window size = len(s1), slide across s2, compare freq arrays. Done.
