@@ -13,6 +13,9 @@ If they match, we found a permutation.
 3. Slide window right: add `s2[right]`, remove `s2[left]`, compare again
 4. Return `false` if no match found
 
+> `left = right - n` where `n = len(s1)`. We don't need an explicit left pointer
+> since the window size is fixed — left is always `right - n`.
+
 ## Code
 
 ```cpp
