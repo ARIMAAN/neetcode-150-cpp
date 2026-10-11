@@ -51,6 +51,10 @@ Unlike "longest substring" problems where window size varies,
 here the target length is fixed: any valid permutation must have exactly `len(s1)` characters.
 So we slide a window of exactly that size — no shrinking needed.
 
+> This is the key difference between this problem and problems like
+> Longest Repeating Character Replacement: there we searched for the best size,
+> here the size is given to us.
+
 ---
 
 ## Related Problems
