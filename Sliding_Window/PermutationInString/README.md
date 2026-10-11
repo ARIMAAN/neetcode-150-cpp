@@ -30,6 +30,9 @@ In other words, return `true` if any substring of `s2` is an anagram of `s1`.
 | Brute Force | O(n! · m) | O(n) | generate all permutations, check each |
 | Sliding Window (freq array) | O(n + m) | O(26) | fixed-size window = len(s1) |
 
+> n = len(s1), m = len(s2). The factorial blowup makes brute force completely impractical
+> even for small inputs. Sliding window is the only viable approach.
+
 ---
 
 ## Key Insight
