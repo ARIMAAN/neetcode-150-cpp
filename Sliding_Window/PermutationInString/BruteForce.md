@@ -1,0 +1,47 @@
+# Brute Force
+
+## Intuition
+
+Generate all permutations of `s1`. For each permutation, check if it appears as a substring in `s2`.
+If any does, return `true`.
+
+## Algorithm
+
+1. Generate all permutations of `s1`
+2. For each permutation, use `s2.find(perm) != string::npos`
+3. If found, return `true`
+4. Return `false`
+
+## Code
+
+```cpp
+bool checkInclusion(string s1, string s2) {
+    sort(s1.begin(), s1.end());
+    do {
+        if (s2.find(s1) != string::npos) return true;
+    } while (next_permutation(s1.begin(), s1.end()));
+    return false;
+}
+```
+
+> `next_permutation` generates permutations in lexicographic order.
+> We sort first so we start from the smallest permutation and cover all of them.
+
+## Dry Run — s1=`"ab"`, s2=`"eidbaooo"`
+
+Permutations of `"ab"`: `"ab"`, `"ba"`
+- `s2.find("ab")` → not found
+- `s2.find("ba")` → found at index 3 ✅
+
+Return `true`
+
+## Complexity
+
+- **Time**: O(n! · m) — n! permutations, each `find` is O(m)
+- **Space**: O(n) — storing current permutation
+
+## Why This Is Terrible
+
+For `s1 = "abcdefghij"` (10 chars), that's 10! = 3,628,800 permutations.
+For `s1` of length 20, it's 20! ≈ 2.4 × 10^18. Completely unusable.
+We don't need to enumerate permutations — we just need to compare frequencies.
