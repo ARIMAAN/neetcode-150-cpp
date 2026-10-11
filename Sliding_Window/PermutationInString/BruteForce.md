@@ -12,6 +12,9 @@ If any does, return `true`.
 3. If found, return `true`
 4. Return `false`
 
+> `next_permutation` only works correctly if the string is sorted first.
+> It generates permutations in lexicographic order and returns false when it wraps back to the first.
+
 ## Code
 
 ```cpp
