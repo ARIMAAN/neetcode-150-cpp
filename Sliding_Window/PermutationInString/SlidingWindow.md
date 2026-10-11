@@ -6,6 +6,9 @@ Two strings are anagrams if and only if their character frequency arrays are ide
 Slide a fixed window of size `len(s1)` across `s2`. At each position, compare freq arrays.
 If they match, we found a permutation.
 
+> This is the classic "find anagram in string" pattern.
+> Same idea as Find All Anagrams in a String (#438) — that one just collects all positions.
+
 ## Algorithm
 
 1. Build `freq1[26]` from `s1`, `freq2[26]` from first `len(s1)` chars of `s2`
