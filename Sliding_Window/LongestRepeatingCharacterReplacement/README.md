@@ -75,3 +75,8 @@ So: `replacements needed = windowSize - count of most frequent char`.
 When I see "longest substring after at most k changes" — sliding window.
 The hard part is figuring out the validity condition: `windowSize - maxFreq <= k`.
 Once that clicks, the rest is just the standard expand/shrink template.
+
+## Complexity
+
+- **Time**: O(n) — each character added and removed at most once
+- **Space**: O(26) = O(1) — fixed frequency array
