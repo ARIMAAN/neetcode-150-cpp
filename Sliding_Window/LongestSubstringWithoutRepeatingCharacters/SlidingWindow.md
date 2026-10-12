@@ -109,3 +109,9 @@ But `while` is the standard pattern and works correctly regardless.
 | Time | O(n²) | O(n) |
 | Space | O(n) | O(min(n, charset)) |
 | Idea | restart every time | reuse previous work |
+
+## Thought Process
+
+First instinct: nested loops checking every substring. That's O(n²).
+Then realized: when we move `i` forward by 1, most of the window is the same.
+Why recompute? Just slide. That's the sliding window insight.
