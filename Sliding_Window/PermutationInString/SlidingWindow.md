@@ -111,3 +111,9 @@ Could also do a manual loop, but `equal` is cleaner.
 Saw "permutation" and thought about generating them — immediately realized that's factorial.
 Then thought: permutation = anagram = same freq array.
 Fixed window size = len(s1), slide across s2, compare freq arrays. Done.
+
+## Related Problems
+
+- [Longest Repeating Character Replacement (#424)](../LongestRepeatingCharacterReplacement/) — variable window
+- [Minimum Window Substring (#76)](../MinimumWindowSubstring/) — variable window, harder
+- [Find All Anagrams (#438)](https://leetcode.com/problems/find-all-anagrams-in-a-string/) — same idea, return all start indices
