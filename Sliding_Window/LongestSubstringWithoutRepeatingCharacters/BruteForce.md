@@ -70,3 +70,7 @@ Final answer: **3**
 
 For `n = 10^5`, this is `10^10` operations — way too slow (TLE).
 We're re-checking overlapping substrings from scratch every time.
+
+> The overlap between `s[i..j]` and `s[i+1..j]` is `j-i` characters.
+> We throw away all that work and recheck from scratch for every new `i`.
+> Sliding window avoids this by maintaining the set incrementally.
