@@ -59,3 +59,9 @@ Output: 0   (prices only decrease)
 ## Why Is This In Sliding Window?
 
 The left pointer is the buy day (minimum price), the right pointer scans forward as the sell day. When we find a price lower than left, we slide left forward to that position. This is the classic sliding window pattern on an array.
+
+## Thought Process
+
+Brute force: try every buy-sell pair. O(n²).
+Optimization: for a fixed sell day `i`, the best buy day is the minimum of `prices[0..i-1]`.
+Maintain that minimum as we go — O(n) single pass.
