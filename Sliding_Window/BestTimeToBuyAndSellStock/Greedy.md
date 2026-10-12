@@ -127,3 +127,9 @@ Handled naturally — no special case needed.
 | **Space** | O(1) — just two variables |
 
 > Compare to brute force: we eliminated the inner loop by realizing we only need the running minimum, not every past price.
+
+## Related Problems
+
+- [Best Time to Buy and Sell Stock II (#122)](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) — can buy/sell multiple times
+- [Best Time to Buy and Sell Stock with Cooldown (#309)](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) — DP variant
+- [Maximum Subarray (#53)](https://leetcode.com/problems/maximum-subarray/) — Kadane's algorithm, same greedy idea
