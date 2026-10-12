@@ -123,3 +123,9 @@ only prevents unnecessary shrinking. The window size never decreases below the c
 When I see "longest substring where we can change at most k characters" — sliding window.
 The validity condition `windowSize - maxFreq <= k` is the core insight.
 Once you have that, the sliding window template just plugs in.
+
+## Related Problems
+
+- [Longest Substring Without Repeating Characters (#3)](../LongestSubstringWithoutRepeatingCharacters/) — k=0 version
+- [Permutation in String (#567)](../PermutationInString/) — fixed window
+- [Minimum Window Substring (#76)](../MinimumWindowSubstring/) — harder, find minimum
