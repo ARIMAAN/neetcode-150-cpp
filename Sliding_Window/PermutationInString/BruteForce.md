@@ -5,6 +5,10 @@
 Generate all permutations of `s1`. For each permutation, check if it appears as a substring in `s2`.
 If any does, return `true`.
 
+> This approach is correct but completely impractical.
+> Even for `s1 = "abc"` (3 chars), we generate 6 permutations.
+> For `s1 = "abcde"` (5 chars), that's 120. For 10 chars, 3.6 million.
+
 ## Algorithm
 
 1. Generate all permutations of `s1`
