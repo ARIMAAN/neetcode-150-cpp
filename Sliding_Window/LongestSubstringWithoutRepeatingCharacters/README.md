@@ -63,3 +63,8 @@ A set gives us that — and we can add/remove as the window expands/shrinks.
 When I see "longest substring with some property" — that's almost always sliding window.
 The key question is: when do I shrink the window?
 Here: shrink when a duplicate enters. Simple condition — simple solution.
+
+## Complexity
+
+- **Time**: O(n) — each character added and removed from set at most once
+- **Space**: O(min(n, charset)) — set holds at most the unique chars in the string
