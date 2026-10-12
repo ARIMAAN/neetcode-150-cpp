@@ -53,6 +53,8 @@ n = 2, freq1 = {a:1, b:1}
 
 Return `true` ✅
 
+> Window `"ba"` starts at index 3. `s2.substr(3,2) = "ba"` which is a permutation of `"ab"`.
+
 ## Dry Run — s1=`"ab"`, s2=`"eidboaoo"`
 
 n = 2, freq1 = {a:1, b:1}
