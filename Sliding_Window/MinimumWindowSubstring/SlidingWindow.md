@@ -68,6 +68,9 @@ If `need[A] = 2` and window has 3 A's, `have` was already incremented when count
 Adding more doesn't double-count. Removing one (count goes 3→2) doesn't decrement `have` either.
 Only when count drops below `need[c]` do we decrement `have`.
 
+> This is the trickiest part of this problem.
+> The `==` check on increment + `<` check on decrement is the correct pair.
+
 ## Edge Cases
 
 | Input | Output | Reason |
