@@ -37,6 +37,9 @@ Use a variable-size sliding window. Expand right until the window contains all c
 Then shrink from left as much as possible while still valid.
 Record the minimum window seen. Repeat.
 
+> Pattern: expand until valid, shrink while valid, record minimum.
+> This is the opposite of "longest" problems where we record maximum.
+
 ---
 
 ## The `have` / `need` Trick
