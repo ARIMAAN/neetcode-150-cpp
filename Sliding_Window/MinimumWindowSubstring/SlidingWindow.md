@@ -84,6 +84,9 @@ Only when count drops below `need[c]` do we decrement `have`.
 - **Time**: O(n + m) — each char added and removed from window at most once
 - **Space**: O(m) — need map + window map, at most O(|t|) unique chars
 
+> The while loop inside the for loop is still O(n) total — same amortized argument:
+> left only moves forward, so total left increments across entire run = O(n).
+
 ## Comparison
 
 | | Brute Force | Sliding Window |
