@@ -13,6 +13,10 @@ Record the window size. Move right again. Repeat until right reaches end.
 3. While `have == required`: update result if window is smaller, remove `s[left]`, advance `left`
 4. Return result string
 
+> We store `minLeft` and `minLen` instead of the actual substring.
+> Only extract the substring at the end with `s.substr(minLeft, minLen)`.
+> This avoids O(n) string copies during the loop.
+
 ## Code
 
 ```cpp
