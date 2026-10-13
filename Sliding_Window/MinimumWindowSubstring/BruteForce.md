@@ -53,3 +53,6 @@ Final answer: `"BANC"` ✅
 
 - **Time**: O(n² · m) — two loops, inner check is O(m)
 - **Space**: O(m) — frequency map for `t`
+
+> We rebuild the `need` map from scratch for every `i`.
+> That's O(m) per outer iteration — another hidden cost on top of O(n²).
