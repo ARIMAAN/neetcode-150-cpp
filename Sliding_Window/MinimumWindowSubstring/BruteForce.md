@@ -1,0 +1,55 @@
+# Brute Force
+
+## Intuition
+
+Try every substring of `s`. For each one, check if it contains all characters of `t`.
+Among all valid substrings, return the shortest one.
+
+## Algorithm
+
+1. For every pair `(i, j)`, extract `s[i..j]`
+2. Check if it contains all chars of `t` using a frequency map
+3. If valid and shorter than current best, update answer
+4. Return best answer or `""` if none found
+
+## Code
+
+```cpp
+string minWindow(string s, string t) {
+    string result = "";
+    for (int i = 0; i < s.size(); i++) {
+        unordered_map<char, int> need;
+        for (char c : t) need[c]++;
+        int count = t.size();
+        for (int j = i; j < s.size(); j++) {
+            if (need.count(s[j]) && need[s[j]] > 0) count--;
+            need[s[j]]--;
+            if (count == 0) {
+                if (result.empty() || j - i + 1 < result.size())
+                    result = s.substr(i, j - i + 1);
+                break;
+            }
+        }
+    }
+    return result;
+}
+```
+
+> We `break` as soon as we find the first valid window starting at `i`.
+> Any longer window starting at `i` can't be the minimum.
+
+## Dry Run — s=`"ADOBECODEBANC"`, t=`"ABC"`
+
+| i | first valid j | window | length |
+|---|---------------|--------|--------|
+| 0 | 5 | `"ADOBEC"` | 6 |
+| 1 | 9 | `"DOBECODEBA"` | ... longer |
+| ... | ... | ... | ... |
+| 9 | 12 | `"BANC"` | 4 ← minimum |
+
+Final answer: `"BANC"` ✅
+
+## Complexity
+
+- **Time**: O(n² · m) — two loops, inner check is O(m)
+- **Space**: O(m) — frequency map for `t`
