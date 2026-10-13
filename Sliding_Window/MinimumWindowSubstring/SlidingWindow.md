@@ -6,6 +6,10 @@ Expand the right pointer until the window contains all chars of `t`.
 Then shrink the left pointer as far as possible while still valid.
 Record the window size. Move right again. Repeat until right reaches end.
 
+> Key insight: once we have a valid window, we want the smallest valid window
+> starting at the current left. So we shrink left until it becomes invalid,
+> recording the minimum along the way.
+
 ## Algorithm
 
 1. Build `need` map from `t`. Set `have = 0`, `required = need.size()`
