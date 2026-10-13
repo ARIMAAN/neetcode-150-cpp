@@ -29,6 +29,9 @@ Given strings `s` and `t`, return the minimum window substring of `s` such that 
 | Brute Force | O(n² · m) | O(m) | check every substring |
 | Sliding Window | O(n + m) | O(m) | expand right, shrink left when valid |
 
+> This is a Hard problem because the validity condition is non-trivial
+> and the have/need optimization is not obvious.
+
 ---
 
 ## Key Insight
