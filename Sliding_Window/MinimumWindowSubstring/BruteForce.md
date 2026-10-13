@@ -5,6 +5,9 @@
 Try every substring of `s`. For each one, check if it contains all characters of `t`.
 Among all valid substrings, return the shortest one.
 
+> A substring contains all chars of `t` if for every char `c` in `t`,
+> the substring has at least `count(c in t)` occurrences of `c`.
+
 ## Algorithm
 
 1. For every pair `(i, j)`, extract `s[i..j]`
