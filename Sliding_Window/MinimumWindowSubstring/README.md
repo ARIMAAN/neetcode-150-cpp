@@ -46,6 +46,9 @@ Track `have` = number of unique chars currently satisfied in the window.
 A char is "satisfied" when its count in the window >= its count in `t`.
 When `have == need`, the window is valid — try to shrink.
 
+> This avoids comparing entire maps every step.
+> Instead of O(26) or O(m) comparison, we just check `have == required` in O(1).
+
 ---
 
 ## Related Problems
