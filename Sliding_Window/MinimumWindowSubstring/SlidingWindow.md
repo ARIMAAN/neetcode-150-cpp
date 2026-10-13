@@ -98,3 +98,11 @@ Only when count drops below `need[c]` do we decrement `have`.
 | Time | O(n² · m) | O(n + m) |
 | Space | O(m) | O(m) |
 | Key idea | try every substring | expand then shrink |
+
+## Thought Process
+
+This is the hardest sliding window problem. The key steps:
+1. Realize it's a sliding window (variable size, find minimum)
+2. Figure out the validity condition (have all chars of t)
+3. Use have/need counters to check validity in O(1)
+4. Store indices not substring to avoid copies
