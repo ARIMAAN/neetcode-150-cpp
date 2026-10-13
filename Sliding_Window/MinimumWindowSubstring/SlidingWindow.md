@@ -83,6 +83,9 @@ Only when count drops below `need[c]` do we decrement `have`.
 | s=`"a"`, t=`"a"` | `"a"` | exact match |
 | t longer than s | `""` | can never contain all of t |
 
+> When no valid window exists, `minLen` stays `INT_MAX`.
+> The ternary `minLen == INT_MAX ? "" : s.substr(...)` handles this cleanly.
+
 ## Complexity
 
 - **Time**: O(n + m) — each char added and removed from window at most once
