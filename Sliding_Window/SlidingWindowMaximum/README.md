@@ -63,3 +63,10 @@ A deque supports both O(1) front and back operations.
 
 - [Minimum Window Substring (#76)](../MinimumWindowSubstring/) — sliding window with maps
 - [Jump Game (#55)](https://leetcode.com/problems/jump-game/) — greedy, similar thinking
+
+## Thought Process
+
+Brute force: scan each window. O(n·k). For large k this is too slow.
+Need a way to maintain the max as the window slides.
+Max-heap gives O(n log k) — better but not optimal.
+Monotonic deque gives O(n) — the key insight is discarding elements that can never be max.
