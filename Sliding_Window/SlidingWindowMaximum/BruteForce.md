@@ -48,6 +48,10 @@ Output: `[3,3,5,5,6,7]` ✅
 - **Time**: O(n · k) — n windows, each scanned in O(k)
 - **Space**: O(1) extra (not counting output)
 
+> Best case: k=1, each window is one element — O(n).
+> Worst case: k=n, one window of size n — O(n²) total.
+> Average case for k=n/2: O(n²/2) = O(n²).
+
 ## Why This Is Slow
 
 For `n = 10^5` and `k = 10^4`, that's 10^9 operations — TLE.
