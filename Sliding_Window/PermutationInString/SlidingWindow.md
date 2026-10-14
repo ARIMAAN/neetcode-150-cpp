@@ -100,6 +100,8 @@ Could also do a manual loop, but `equal` is cleaner.
 > Total window positions = `m - n + 1`. Each slide is O(1) update + O(26) compare.
 > So total = O(n) + O(26 · (m - n + 1)) = O(n + m).
 
+> For the constraints `s1, s2 <= 10^4`: at most 10^4 windows, each O(26) — very fast in practice.
+
 ## Comparison
 
 | | Brute Force | Sliding Window |
