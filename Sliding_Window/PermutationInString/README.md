@@ -65,3 +65,8 @@ So we slide a window of exactly that size — no shrinking needed.
 - [Longest Repeating Character Replacement (#424)](../LongestRepeatingCharacterReplacement/) — variable size window
 - [Minimum Window Substring (#76)](../MinimumWindowSubstring/) — variable size, harder version
 - [Find All Anagrams in a String (#438)](https://leetcode.com/problems/find-all-anagrams-in-a-string/) — same idea, return all positions
+
+## Complexity
+
+- **Time**: O(n + m) — build initial window O(n), slide O(m), each comparison O(26) = O(1)
+- **Space**: O(26) = O(1) — two fixed frequency arrays
