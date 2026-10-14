@@ -59,3 +59,9 @@ Final answer: `"BANC"` ✅
 
 > We rebuild the `need` map from scratch for every `i`.
 > That's O(m) per outer iteration — another hidden cost on top of O(n²).
+
+## Why Break Early?
+
+Once we find the first valid window starting at `i`, we break.
+Any extension of that window (larger `j`) would only make it longer — not a better answer.
+So we move `i` forward and try a new starting point.
