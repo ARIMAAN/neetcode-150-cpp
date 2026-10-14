@@ -113,3 +113,9 @@ This is the hardest sliding window problem. The key steps:
 2. Figure out the validity condition (have all chars of t)
 3. Use have/need counters to check validity in O(1)
 4. Store indices not substring to avoid copies
+
+## Related Problems
+
+- [Permutation in String (#567)](../PermutationInString/) — fixed window, easier version
+- [Longest Repeating Character Replacement (#424)](../LongestRepeatingCharacterReplacement/) — find maximum instead
+- [Substring with Concatenation of All Words (#30)](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) — similar idea with words
