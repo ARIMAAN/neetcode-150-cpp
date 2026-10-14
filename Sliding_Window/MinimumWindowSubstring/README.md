@@ -62,3 +62,9 @@ When `have == need`, the window is valid — try to shrink.
 - [Permutation in String (#567)](../PermutationInString/) — fixed window, easier version
 - [Longest Substring Without Repeating Characters (#3)](../LongestSubstringWithoutRepeatingCharacters/) — variable window, simpler condition
 - [Find All Anagrams in a String (#438)](https://leetcode.com/problems/find-all-anagrams-in-a-string/) — fixed window variant
+
+## Thought Process
+
+See "minimum substring containing all chars" — that's sliding window, find minimum.
+The hard part is the validity check. Comparing maps every step is O(m) — too slow.
+have/need counters reduce it to O(1). That's the key trick to know.
