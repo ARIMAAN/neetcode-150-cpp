@@ -65,3 +65,10 @@ Final answer: `"BANC"` ✅
 Once we find the first valid window starting at `i`, we break.
 Any extension of that window (larger `j`) would only make it longer — not a better answer.
 So we move `i` forward and try a new starting point.
+
+## Thought Process
+
+Brute force is the natural first attempt. Two nested loops, check each substring.
+The key observation that leads to sliding window: when we move `i` forward by 1,
+we only lose one character from the left and gain nothing on the right.
+Why recheck everything? Just maintain the window state.
