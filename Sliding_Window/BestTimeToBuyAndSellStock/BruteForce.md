@@ -63,3 +63,8 @@ public:
 ## What's The Redundancy?
 
 For a fixed buy day `i`, we check all sell days `j > i`. But we already know the best sell day for `i` is the maximum price after `i`. The greedy approach finds this without the inner loop.
+
+## Related Problems
+
+- [Maximum Subarray (#53)](https://leetcode.com/problems/maximum-subarray/) — same O(n²) brute force pattern
+- [Two Sum (#1)](../../Arrays_and_Hashing/TwoSum/) — same nested loop structure
