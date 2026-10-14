@@ -100,3 +100,9 @@ Brute force is obvious. The hard part is getting to O(n).
 Key observation: if `nums[i] >= nums[j]` and `i > j`, then `j` can never be the max
 for any future window (since `i` is in the window whenever `j` is, and `i` is larger).
 So we can discard `j`. That's exactly what the deque does.
+
+## Related Problems
+
+- [Daily Temperatures (#739)](../../Stack/DailyTemperatures/) — monotonic stack, next greater element
+- [Largest Rectangle in Histogram (#84)](../../Stack/LargestRectangleInHistogram/) — monotonic stack
+- [Jump Game VI (#1696)](https://leetcode.com/problems/jump-game-vi/) — monotonic deque on DP
