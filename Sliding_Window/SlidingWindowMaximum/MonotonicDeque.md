@@ -7,6 +7,9 @@ The front is always the index of the current window's maximum.
 When we add a new element, remove all smaller elements from the back — they're useless.
 When the front index falls outside the window, pop it.
 
+> The deque is a "candidates for maximum" list.
+> We aggressively prune candidates that can never win.
+
 ## Algorithm
 
 1. Use `deque<int> dq` storing indices
