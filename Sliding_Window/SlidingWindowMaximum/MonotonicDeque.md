@@ -84,3 +84,10 @@ Keeping the old equal element would give wrong results when it expires.
 | Time | O(n · k) | O(n) |
 | Space | O(1) | O(k) |
 | Key idea | rescan window | maintain decreasing deque |
+
+## Thought Process
+
+Brute force is obvious. The hard part is getting to O(n).
+Key observation: if `nums[i] >= nums[j]` and `i > j`, then `j` can never be the max
+for any future window (since `i` is in the window whenever `j` is, and `i` is larger).
+So we can discard `j`. That's exactly what the deque does.
