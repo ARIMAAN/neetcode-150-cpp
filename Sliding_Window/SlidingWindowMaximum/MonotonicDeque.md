@@ -74,6 +74,9 @@ Keeping the old equal element would give wrong results when it expires.
 - **Time**: O(n) — each element pushed and popped from deque at most once
 - **Space**: O(k) — deque holds at most k indices at any time
 
+> The while loop inside the for loop is still O(n) total.
+> Each element is pushed once and popped at most once — total deque operations = O(2n) = O(n).
+
 ## Comparison
 
 | | Brute Force | Monotonic Deque |
