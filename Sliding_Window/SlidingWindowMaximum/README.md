@@ -50,6 +50,10 @@ We need two operations efficiently:
 
 A deque supports both O(1) front and back operations.
 
+> A regular queue only supports front removal.
+> A stack only supports back removal.
+> Only a deque gives us both — that's exactly why this data structure fits.
+
 ---
 
 ## Related Problems
