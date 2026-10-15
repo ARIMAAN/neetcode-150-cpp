@@ -49,3 +49,7 @@ Output: `[3,3,5,5,6,7]` ✅
 
 For `n = 10^5` and `k = 10^4`, that's 10^9 operations — TLE.
 We're re-scanning overlapping parts of the window every time.
+
+> The overlap between consecutive windows is `k-1` elements.
+> We're doing O(k) work per window when only 1 element changes.
+> The monotonic deque exploits this by maintaining state across windows.
