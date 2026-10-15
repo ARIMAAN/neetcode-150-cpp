@@ -75,6 +75,9 @@ Keeping the old equal element would give wrong results when it expires.
 | `[1,2,3]` | 3 | `[3]` | one window = whole array |
 | `[3,2,1]` | 1 | `[3,2,1]` | k=1, each element is its own window |
 
+> When k=1, every element is its own window — output = input.
+> When k=n, there's only one window — output = [max of array].
+
 ## Complexity
 
 - **Time**: O(n) — each element pushed and popped from deque at most once
