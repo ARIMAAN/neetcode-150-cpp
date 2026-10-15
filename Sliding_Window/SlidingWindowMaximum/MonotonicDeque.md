@@ -57,6 +57,10 @@ We pop elements `<= nums[i]` (not just `<`).
 If equal, the newer element is preferred — it will stay in the window longer.
 Keeping the old equal element would give wrong results when it expires.
 
+> Example: `[2,2]`, k=2. If we keep both 2's, when the first expires
+> the deque front correctly moves to the second. With `<=` we only keep the newer one
+> but the result is the same. Either works for correctness, `<=` is cleaner.
+
 ## Edge Cases
 
 | Input | k | Output | Reason |
