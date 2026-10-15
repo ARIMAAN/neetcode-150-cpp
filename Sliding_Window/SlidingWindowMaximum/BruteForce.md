@@ -1,0 +1,51 @@
+# Brute Force
+
+## Intuition
+
+For each window position, scan all `k` elements and find the maximum.
+Append it to the result.
+
+## Algorithm
+
+1. For each `i` from `0` to `n - k`:
+2. Scan `nums[i..i+k-1]`, find max
+3. Append max to result
+4. Return result
+
+## Code
+
+```cpp
+vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+    vector<int> result;
+    for (int i = 0; i <= nums.size() - k; i++) {
+        int maxVal = nums[i];
+        for (int j = i + 1; j < i + k; j++)
+            maxVal = max(maxVal, nums[j]);
+        result.push_back(maxVal);
+    }
+    return result;
+}
+```
+
+## Dry Run — `[1,3,-1,-3,5,3,6,7]`, k=3
+
+| i | window | max |
+|---|--------|-----|
+| 0 | [1,3,-1] | 3 |
+| 1 | [3,-1,-3] | 3 |
+| 2 | [-1,-3,5] | 5 |
+| 3 | [-3,5,3] | 5 |
+| 4 | [5,3,6] | 6 |
+| 5 | [3,6,7] | 7 |
+
+Output: `[3,3,5,5,6,7]` ✅
+
+## Complexity
+
+- **Time**: O(n · k) — n windows, each scanned in O(k)
+- **Space**: O(1) extra (not counting output)
+
+## Why This Is Slow
+
+For `n = 10^5` and `k = 10^4`, that's 10^9 operations — TLE.
+We're re-scanning overlapping parts of the window every time.
