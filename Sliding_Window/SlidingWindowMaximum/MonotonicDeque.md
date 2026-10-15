@@ -17,6 +17,9 @@ When the front index falls outside the window, pop it.
    - If `i >= k - 1`, append `nums[dq.front()]` to result
 3. Return result
 
+> We only start appending results when `i >= k - 1` because
+> the first complete window ends at index `k - 1`.
+
 ## Code
 
 ```cpp
