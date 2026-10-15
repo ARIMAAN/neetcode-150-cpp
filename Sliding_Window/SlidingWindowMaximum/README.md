@@ -37,6 +37,9 @@ Use a **monotonic deque** (decreasing) that stores indices.
 The front of the deque is always the index of the maximum in the current window.
 Before adding a new element, pop from the back any elements smaller than it — they can never be the max.
 
+> Why store indices and not values? Because we need to check if the front
+> has fallen outside the current window. We can only do that with indices.
+
 ---
 
 ## Why a Deque?
