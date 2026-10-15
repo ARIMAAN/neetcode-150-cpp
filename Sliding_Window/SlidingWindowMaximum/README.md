@@ -29,6 +29,9 @@ Given an integer array `nums` and a sliding window of size `k`, return an array 
 | Brute Force | O(n · k) | O(1) | scan each window for max |
 | Monotonic Deque | O(n) | O(k) | deque stores indices in decreasing order |
 
+> This is a Hard problem because the monotonic deque is a non-obvious data structure.
+> Most people don't think of it without prior exposure.
+
 ---
 
 ## Key Insight
