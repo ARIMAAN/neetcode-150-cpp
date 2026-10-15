@@ -5,6 +5,9 @@
 For each window position, scan all `k` elements and find the maximum.
 Append it to the result.
 
+> There are `n - k + 1` windows total.
+> For `n=8, k=3`: windows at positions 0,1,2,3,4,5 → 6 windows = 8-3+1.
+
 ## Algorithm
 
 1. For each `i` from `0` to `n - k`:
