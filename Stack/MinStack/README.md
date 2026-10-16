@@ -29,6 +29,12 @@ Design a stack that supports `push`, `pop`, `top`, and `getMin` — all in O(1) 
 - **Time**: O(1) for all operations — push, pop, top, getMin
 - **Space**: O(n) — two stacks, each up to n elements
 
+## Related Problems
+
+- [Valid Parentheses (#20)](../ValidParentheses/) — basic stack usage
+- [Daily Temperatures (#739)](../DailyTemperatures/) — monotonic stack
+- [Max Stack (#716)](https://leetcode.com/problems/max-stack/) — same idea but track max instead of min
+
 ## Key Insight
 
 Maintain a second stack `minStack` that tracks the current minimum at each level.
