@@ -33,6 +33,12 @@ Given `n` pairs of parentheses, generate all combinations of well-formed parenth
 - **Time**: O(4^n / √n) — Catalan number of valid strings, each of length 2n
 - **Space**: O(n) — recursion depth is at most 2n (length of output string)
 
+## Related Problems
+
+- [Valid Parentheses (#20)](../ValidParentheses/) — check validity
+- [Minimum Add to Make Parentheses Valid (#921)](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) — fix invalid string
+- [Remove Invalid Parentheses (#301)](https://leetcode.com/problems/remove-invalid-parentheses/) — harder backtracking
+
 ## Key Insight
 
 At each step, we can add `(` if `open < n`, or `)` if `close < open`.
