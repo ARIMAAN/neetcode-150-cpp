@@ -24,6 +24,11 @@ Design a stack that supports `push`, `pop`, `top`, and `getMin` — all in O(1) 
 > The naive approach: scan the entire stack for min on each `getMin()` call — O(n).
 > Two stacks trades space for O(1) time on all operations.
 
+## Complexity
+
+- **Time**: O(1) for all operations — push, pop, top, getMin
+- **Space**: O(n) — two stacks, each up to n elements
+
 ## Key Insight
 
 Maintain a second stack `minStack` that tracks the current minimum at each level.
