@@ -34,6 +34,13 @@ A faster car that catches up to a slower car becomes part of that fleet (it can'
 - **Time**: O(n log n) — dominated by sorting
 - **Space**: O(n) — cars array + stack
 
+## Thought Process
+
+Key insight: a car can only join a fleet ahead of it, never behind.
+So process cars from closest to target first (descending sort).
+For each car, if it arrives before the fleet ahead, it joins that fleet.
+Otherwise it starts a new fleet. Stack tracks fleet arrival times.
+
 ## Key Insight
 
 Sort cars by position (descending — closest to target first).
