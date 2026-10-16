@@ -27,6 +27,11 @@ Evaluate an expression in Reverse Polish Notation (postfix). Operators are `+`, 
 > Each token is processed once. Numbers are pushed, operators pop two and push one.
 > Stack size grows by 1 for numbers, shrinks by 1 for operators (net -1 per operator).
 
+## Complexity
+
+- **Time**: O(n) — one pass through tokens
+- **Space**: O(n) — stack holds at most n/2 numbers (half the tokens are numbers in worst case)
+
 ## Key Insight
 
 Push numbers onto a stack. When an operator is seen, pop two numbers,
