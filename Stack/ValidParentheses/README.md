@@ -122,3 +122,6 @@ Return `false` ✅
 
 - **Time**: O(n) — single pass through the string
 - **Space**: O(n) — stack holds at most n/2 open brackets
+
+> The map lookup `match.count(c)` is O(1) average.
+> Total: O(n) time, O(n) space. Can't do better than O(n) since we must read every character.
