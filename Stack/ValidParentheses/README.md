@@ -117,3 +117,8 @@ Return `false` ✅
 
 > The `st.empty()` check before `st.top()` is critical.
 > Without it, calling `top()` on an empty stack is undefined behavior.
+
+## Complexity
+
+- **Time**: O(n) — single pass through the string
+- **Space**: O(n) — stack holds at most n/2 open brackets
