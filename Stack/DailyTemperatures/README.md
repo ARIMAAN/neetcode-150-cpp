@@ -33,6 +33,12 @@ Given an array `temperatures`, return an array `answer` where `answer[i]` is the
 - **Time**: O(n) — each index pushed and popped at most once
 - **Space**: O(n) — stack + output array
 
+## Thought Process
+
+Brute force: for each day scan forward until warmer. O(n²).
+Optimization: instead of scanning forward, wait for the warmer day to come to us.
+Maintain a stack of unresolved days. When a warmer day arrives, resolve all colder days in the stack.
+
 ## Key Insight
 
 Use a **monotonic decreasing stack** of indices.
