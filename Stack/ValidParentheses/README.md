@@ -29,12 +29,11 @@ A string is valid if:
 > `"([)]"` is the classic trick case — each bracket has a match but the order is wrong.
 > The stack catches this because `]` doesn't match `(` on top.
 
-**Constraints**: `1 <= s.length <= 10^4`, `s` consists of brackets only
+## Related Problems
 
-> Odd-length strings are always invalid — can short-circuit early.
-> `if (s.size() % 2 != 0) return false;`
-
----
+- [Min Stack (#155)](../MinStack/) — stack with extra tracking
+- [Generate Parentheses (#22)](../GenerateParentheses/) — generate valid strings
+- [Largest Rectangle in Histogram (#84)](../LargestRectangleInHistogram/) — monotonic stack
 
 ## Approach
 
