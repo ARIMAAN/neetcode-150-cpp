@@ -26,6 +26,9 @@ A string is valid if:
 | `"([)]"` | `false` |
 | `"{[]}"` | `true` |
 
+> `"([)]"` is the classic trick case — each bracket has a match but the order is wrong.
+> The stack catches this because `]` doesn't match `(` on top.
+
 **Constraints**: `1 <= s.length <= 10^4`, `s` consists of brackets only
 
 > Odd-length strings are always invalid — can short-circuit early.
