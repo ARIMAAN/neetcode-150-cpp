@@ -33,6 +33,9 @@ A string is valid if:
 |----------|------|-------|
 | Stack | O(n) | O(n) |
 
+> Space is O(n) worst case: a string like `"(((((("` pushes all n chars onto the stack.
+> Best case O(1) if every open is immediately closed.
+
 ## Key Insight
 
 Push open brackets onto a stack. When a close bracket is seen,
