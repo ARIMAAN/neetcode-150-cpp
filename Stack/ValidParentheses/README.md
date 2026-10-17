@@ -28,6 +28,9 @@ A string is valid if:
 
 **Constraints**: `1 <= s.length <= 10^4`, `s` consists of brackets only
 
+> Odd-length strings are always invalid — can short-circuit early.
+> `if (s.size() % 2 != 0) return false;`
+
 ---
 
 ## Approach
