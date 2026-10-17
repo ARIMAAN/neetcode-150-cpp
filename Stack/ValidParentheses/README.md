@@ -40,6 +40,9 @@ check if the top of the stack is the matching open bracket.
 If not, or if the stack is empty, return false.
 At the end, the stack must be empty.
 
+> The stack naturally handles nesting: the most recently opened bracket
+> must be the first one closed. LIFO order = correct bracket matching.
+
 ## Solution
 
 ```cpp
