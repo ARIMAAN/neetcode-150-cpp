@@ -62,6 +62,10 @@ bool isValid(string s) {
 }
 ```
 
+> The map stores close → open pairs.
+> When we see a close bracket, we look up its expected open bracket and compare with stack top.
+> This is cleaner than a chain of if-else for each bracket type.
+
 ## Dry Run — `"{[]}"`
 
 | char | action | stack |
