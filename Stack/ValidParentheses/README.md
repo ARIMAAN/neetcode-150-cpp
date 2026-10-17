@@ -45,6 +45,11 @@ A string is valid if:
 > Space is O(n) worst case: a string like `"(((((("` pushes all n chars onto the stack.
 > Best case O(1) if every open is immediately closed.
 
+## Thought Process
+
+First instinct: count opens and closes. But that fails for `")("` — counts match but invalid.
+Then: need to track order. Stack is the natural structure for ordered matching.
+
 ## Key Insight
 
 Push open brackets onto a stack. When a close bracket is seen,
