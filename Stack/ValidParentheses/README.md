@@ -77,3 +77,6 @@ Return `true` ✅
 | `"("` | `false` | unclosed bracket, stack not empty |
 | `")"` | `false` | close with empty stack |
 | `""` | `true` | empty string is valid |
+
+> The `st.empty()` check before `st.top()` is critical.
+> Without it, calling `top()` on an empty stack is undefined behavior.
