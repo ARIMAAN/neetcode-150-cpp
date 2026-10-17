@@ -13,6 +13,9 @@ A string is valid if:
 2. Open brackets are closed in the correct order
 3. Every close bracket has a corresponding open bracket
 
+> Rule 3 is implied by rules 1 and 2, but worth stating explicitly.
+> An empty string satisfies all rules vacuously — it's valid.
+
 **Examples**:
 
 | Input | Output |
