@@ -77,6 +77,16 @@ bool isValid(string s) {
 
 Return `true` ✅
 
+## Dry Run — `"([)]"`
+
+| char | action | stack |
+|------|--------|-------|
+| `(` | push | `(` |
+| `[` | push | `([` |
+| `)` | top=`[` ≠ `(` → return false | - |
+
+Return `false` ✅
+
 ## Edge Cases
 
 | Input | Output | Reason |
