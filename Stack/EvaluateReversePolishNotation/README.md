@@ -24,6 +24,9 @@ Evaluate an expression in Reverse Polish Notation (postfix). Operators are `+`, 
 |----------|------|-------|
 | Stack | O(n) | O(n) |
 
+> Each token is processed once. Numbers are pushed, operators pop two and push one.
+> Stack size grows by 1 for numbers, shrinks by 1 for operators (net -1 per operator).
+
 ## Key Insight
 
 Push numbers onto a stack. When an operator is seen, pop two numbers,
