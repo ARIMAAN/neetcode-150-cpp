@@ -28,6 +28,9 @@ When pushing `val`, push `min(val, minStack.top())` onto `minStack`.
 When popping, pop from both stacks.
 `getMin()` just returns `minStack.top()`.
 
+> The key: `minSt` is always in sync with `st` — same size, same push/pop rhythm.
+> `minSt.top()` always reflects the minimum of the current stack state.
+
 ## Solution
 
 ```cpp
