@@ -29,6 +29,9 @@ Evaluate an expression in Reverse Polish Notation (postfix). Operators are `+`, 
 Push numbers onto a stack. When an operator is seen, pop two numbers,
 apply the operator, push the result back. Final answer is the only element left.
 
+> RPN eliminates the need for parentheses and operator precedence rules.
+> The stack naturally handles the order of operations.
+
 ## Solution
 
 ```cpp
