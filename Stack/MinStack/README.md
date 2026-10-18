@@ -58,6 +58,9 @@ public:
 | pop | [5,3] | [5,3] | - |
 | getMin | - | - | 3 |
 
+> Notice push(7): minSt gets `min(7, 3) = 3`, not 7.
+> So even though 7 is on top of st, getMin still correctly returns 3.
+
 ## Why This Works
 
 `minSt[i]` = minimum of all elements from bottom to position `i`.
