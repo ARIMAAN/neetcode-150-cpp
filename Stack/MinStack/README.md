@@ -76,3 +76,8 @@ No need to rescan.
 > Alternative: only push to `minSt` when `val <= minSt.top()`.
 > Then pop from `minSt` only when the popped value equals `minSt.top()`.
 > Saves space when many pushes are larger than current min.
+
+## Related Problems
+
+- [Valid Parentheses (#20)](../ValidParentheses/) — basic stack usage
+- [Daily Temperatures (#739)](../DailyTemperatures/) — monotonic stack
