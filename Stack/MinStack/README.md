@@ -10,6 +10,9 @@ Design a stack that supports `push`, `pop`, `top`, and `getMin` — all in O(1) 
 
 **Constraints**: `-2^31 <= val <= 2^31 - 1`, at most `3 * 10^4` calls
 
+> The challenge: a regular stack gives O(1) push/pop/top but O(n) getMin.
+> We need to do better.
+
 ---
 
 ## Approach
