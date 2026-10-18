@@ -51,6 +51,9 @@ int evalRPN(vector<string>& tokens) {
 }
 ```
 
+> Pop `b` first, then `a`. Order matters for `-` and `/`.
+> `a - b` and `a / b` where `a` was pushed before `b`.
+
 ## Dry Run — `["2","1","+","3","*"]`
 
 | token | action | stack |
