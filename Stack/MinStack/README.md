@@ -67,6 +67,17 @@ public:
 > Notice push(7): minSt gets `min(7, 3) = 3`, not 7.
 > So even though 7 is on top of st, getMin still correctly returns 3.
 
+## Dry Run — push(2), push(2), pop, getMin
+
+| op | st | minSt | result |
+|----|----|----|--------|
+| push(2) | [2] | [2] | - |
+| push(2) | [2,2] | [2,2] | - |
+| pop | [2] | [2] | - |
+| getMin | - | - | 2 |
+
+> Duplicate values: both stacks pop together, min is preserved correctly.
+
 ## Why This Works
 
 `minSt[i]` = minimum of all elements from bottom to position `i`.
