@@ -68,3 +68,6 @@ Return `9` ✅
 - Negative numbers: `"-3"` is a valid token, `stol` handles it
 - Division truncates toward zero: `-7/2 = -3` not `-4`
 - Use `long` to avoid overflow during intermediate multiplications
+
+> C++ integer division already truncates toward zero for positive/negative combos.
+> So `-7/2 = -3` in C++ — matches the problem requirement without extra handling.
