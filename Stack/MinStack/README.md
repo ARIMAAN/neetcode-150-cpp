@@ -47,6 +47,9 @@ public:
 };
 ```
 
+> `minSt.empty() ? val : min(val, minSt.top())` handles the first push correctly.
+> On first push, there's no previous min to compare against, so we just use `val`.
+
 ## Dry Run — push(5), push(3), push(7), getMin, pop, getMin
 
 | op | st | minSt | result |
