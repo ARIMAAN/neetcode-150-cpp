@@ -57,3 +57,7 @@ public:
 `minSt[i]` = minimum of all elements from bottom to position `i`.
 When we pop the top, the minimum of the remaining elements is `minSt[i-1]` — already stored.
 No need to rescan.
+
+> Alternative: only push to `minSt` when `val <= minSt.top()`.
+> Then pop from `minSt` only when the popped value equals `minSt.top()`.
+> Saves space when many pushes are larger than current min.
