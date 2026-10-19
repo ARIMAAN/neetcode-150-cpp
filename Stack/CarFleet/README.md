@@ -33,6 +33,9 @@ Compute time to reach target for each: `time = (target - pos) / speed`.
 Use a stack: if the current car's time > stack top's time, it forms a new fleet.
 Otherwise it catches up and joins the fleet ahead.
 
+> A car with a smaller time catches up to a car with a larger time.
+> Once it catches up, it can't pass — they become one fleet moving at the slower car's speed.
+
 ## Solution
 
 ```cpp
