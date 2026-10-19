@@ -55,6 +55,9 @@ vector<int> dailyTemperatures(vector<int>& temperatures) {
 }
 ```
 
+> `answer[st.top()] = i - st.top()` — the number of days to wait is the index difference.
+> We store indices (not temperatures) so we can compute this difference.
+
 ## Dry Run — `[73,74,75,71,69,72,76,73]`
 
 | i | temp | stack (indices) | pops |
