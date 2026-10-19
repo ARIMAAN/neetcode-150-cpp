@@ -31,6 +31,9 @@ Use a **monotonic decreasing stack** of indices.
 When we see a temperature warmer than the stack top, that day is the answer for the top.
 Pop and record the difference in indices.
 
+> The stack maintains a list of days waiting for a warmer day.
+> When a warmer day arrives, it resolves all days in the stack that are colder.
+
 ## Solution
 
 ```cpp
