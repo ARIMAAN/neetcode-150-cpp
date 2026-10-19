@@ -30,6 +30,10 @@ Given `n` pairs of parentheses, generate all combinations of well-formed parenth
 At each step, we can add `(` if `open < n`, or `)` if `close < open`.
 Recurse until `open == close == n`.
 
+> These two conditions are the complete characterization of valid parentheses.
+> `open < n`: haven't used all opens yet.
+> `close < open`: can only close an open bracket that exists.
+
 ## Solution
 
 ```cpp
