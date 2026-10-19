@@ -52,6 +52,9 @@ vector<string> generateParenthesis(int n) {
 }
 ```
 
+> `std::function` with lambda allows recursive lambdas in C++.
+> The `[&]` capture gives access to `result` and `n` from the outer scope.
+
 ## Dry Run — n=2
 
 ```
