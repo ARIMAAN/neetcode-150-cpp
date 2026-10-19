@@ -70,6 +70,9 @@ bt("", 0, 0)
 
 Output: `["(())", "()()"]` ✅
 
+> Total recursive calls for n=2: 5 (2 results + 3 internal nodes).
+> The tree is small because pruning cuts off invalid branches early.
+
 ## Why This Is Correct
 
 - `open < n`: we can still add more open brackets
