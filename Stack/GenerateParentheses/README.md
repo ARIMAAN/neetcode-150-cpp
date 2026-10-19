@@ -72,3 +72,6 @@ Output: `["(())", "()()"]` ✅
 - `open < n`: we can still add more open brackets
 - `close < open`: we can only close if there's an unmatched open bracket
 - These two conditions guarantee every generated string is valid
+
+> This is pruned backtracking — we never generate an invalid string and then discard it.
+> Every leaf of the recursion tree is a valid result.
