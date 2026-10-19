@@ -25,6 +25,9 @@ Given an array `temperatures`, return an array `answer` where `answer[i]` is the
 | Brute Force | O(n²) | O(1) |
 | Monotonic Stack | O(n) | O(n) |
 
+> Brute force: for each day, scan forward until a warmer day is found.
+> Monotonic stack: process each day once, resolve waiting days when warmer day arrives.
+
 ## Key Insight
 
 Use a **monotonic decreasing stack** of indices.
