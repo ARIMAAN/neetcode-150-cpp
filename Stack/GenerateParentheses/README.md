@@ -25,6 +25,9 @@ Given `n` pairs of parentheses, generate all combinations of well-formed parenth
 |----------|------|-------|
 | Backtracking | O(4^n / √n) | O(n) |
 
+> The time complexity is the nth Catalan number × n (for string construction).
+> For n=8 (max constraint): ~1430 valid strings. Very manageable.
+
 ## Key Insight
 
 At each step, we can add `(` if `open < n`, or `)` if `close < open`.
