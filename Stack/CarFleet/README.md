@@ -69,3 +69,6 @@ Return `3` ✅
 We process cars from closest to target to farthest.
 A car can only be blocked by a car ahead of it (closer to target).
 Processing in this order lets us check if each car catches up to the fleet ahead.
+
+> If we sorted ascending (farthest first), we'd need to look forward to find blocking cars.
+> Descending order means we always compare with the car already processed (ahead of us).
