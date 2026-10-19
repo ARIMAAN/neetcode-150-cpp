@@ -71,3 +71,6 @@ Remaining [6,7] → ans[6]=ans[7]=0 (default) ✅
 
 - Decreasing array `[90,80,70]` → `[0,0,0]`, stack never pops
 - All same `[50,50,50]` → `[0,0,0]`
+
+> Default initialization `vector<int> answer(n, 0)` handles the no-warmer-day case.
+> Elements remaining in the stack at the end never got popped — their answer stays 0.
