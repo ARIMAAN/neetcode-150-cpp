@@ -99,3 +99,8 @@ Remaining [6,7] → ans[6]=ans[7]=0 (default) ✅
 
 > Default initialization `vector<int> answer(n, 0)` handles the no-warmer-day case.
 > Elements remaining in the stack at the end never got popped — their answer stays 0.
+
+## Complexity
+
+- **Time**: O(n) — each index pushed and popped at most once
+- **Space**: O(n) — stack + output array
