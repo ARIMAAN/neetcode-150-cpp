@@ -97,6 +97,9 @@ Return `10` ✅
 - Single bar: `[5]` → `5`
 - Decreasing: `[5,4,3,2,1]` → `9` (height=3, width=3)
 
+> For `[5,4,3,2,1]`: the optimal rectangle is height=3, width=3 (bars at indices 2,3,4).
+> Or height=1, width=5 = 5. Or height=2, width=2 = 4. Max is 9.
+
 ## Complexity
 
 - **Time**: O(n) — each bar pushed and popped at most once
