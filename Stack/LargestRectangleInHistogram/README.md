@@ -35,6 +35,12 @@ Given an array `heights` representing a histogram, return the area of the larges
 - **Time**: O(n) — each bar pushed and popped at most once
 - **Space**: O(n) — stack holds at most n indices
 
+## Related Problems
+
+- [Maximal Rectangle (#85)](https://leetcode.com/problems/maximal-rectangle/) — apply this per row of a matrix
+- [Daily Temperatures (#739)](../DailyTemperatures/) — monotonic stack, next greater element
+- [Trapping Rain Water (#42)](../../Two_Pointers/TrappingRainWater/) — similar boundary thinking
+
 ---
 
 ## Key Insight
