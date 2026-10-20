@@ -104,3 +104,12 @@ Return `10` ✅
 
 - **Time**: O(n) — each bar pushed and popped at most once
 - **Space**: O(n) — stack
+
+> Same amortized argument as other monotonic stack problems.
+> Total push + pop operations = O(2n) = O(n).
+
+## Thought Process
+
+Brute force is obvious. Getting to O(n) requires the insight:
+for each bar, we need the nearest shorter bar on both sides.
+Monotonic stack gives us both in one pass — right boundary when popped, left boundary from new stack top.
