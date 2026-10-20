@@ -92,11 +92,17 @@ Only when count drops below `need[c]` do we decrement `have`.
 
 ## Complexity
 
-- **Time**: O(n + m) — each char added and removed from window at most once
+- **Time**: O(n) — each character added and removed from window at most once
 - **Space**: O(m) — need map + window map, at most O(|t|) unique chars
 
 > The while loop inside the for loop is still O(n) total — same amortized argument:
 > left only moves forward, so total left increments across entire run = O(n).
+
+## Related Problems
+
+- [Permutation in String (#567)](../PermutationInString/) — fixed window, easier version
+- [Longest Repeating Character Replacement (#424)](../LongestRepeatingCharacterReplacement/) — find maximum instead
+- [Substring with Concatenation of All Words (#30)](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) — similar idea with words
 
 ## Comparison
 
