@@ -34,6 +34,9 @@ For each bar, the largest rectangle using that bar's height extends left and rig
 until a shorter bar is encountered. Use a monotonic increasing stack to find,
 for each bar, the first shorter bar to its left and right.
 
+> Brute force: for each bar, scan left and right to find boundaries — O(n) per bar = O(n²).
+> Monotonic stack: find both boundaries for all bars in a single O(n) pass.
+
 ---
 
 ## Why Monotonic Stack?
