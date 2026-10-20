@@ -86,6 +86,12 @@ Keeping the old equal element would give wrong results when it expires.
 > The while loop inside the for loop is still O(n) total.
 > Each element is pushed once and popped at most once — total deque operations = O(2n) = O(n).
 
+## Related Problems
+
+- [Daily Temperatures (#739)](../../Stack/DailyTemperatures/) — monotonic stack, next greater element
+- [Largest Rectangle in Histogram (#84)](../../Stack/LargestRectangleInHistogram/) — monotonic stack
+- [Jump Game VI (#1696)](https://leetcode.com/problems/jump-game-vi/) — monotonic deque on DP
+
 ## Comparison
 
 | | Brute Force | Monotonic Deque |
