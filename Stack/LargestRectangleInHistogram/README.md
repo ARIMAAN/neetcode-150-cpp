@@ -68,6 +68,10 @@ int largestRectangleArea(vector<int>& heights) {
 }
 ```
 
+> `heights.push_back(0)` appends a sentinel bar of height 0.
+> This forces all remaining bars in the stack to be popped and processed at the end.
+> Without it, bars that are never shorter than anything to their right would be missed.
+
 ## Dry Run — `[2,1,5,6,2,3]`
 
 Append 0 → `[2,1,5,6,2,3,0]`
