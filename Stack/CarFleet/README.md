@@ -56,6 +56,9 @@ int carFleet(int target, vector<int>& position, vector<int>& speed) {
 }
 ```
 
+> `(double)(target - position[i]) / speed[i]` — cast to double before division.
+> Integer division would lose precision and give wrong fleet counts.
+
 ## Dry Run — position=[10,8,0,5,3], speed=[2,4,1,1,3], target=12
 
 Sorted by position desc: [(10,1.0),(8,1.0),(5,7.0),(3,3.0),(0,12.0)]
