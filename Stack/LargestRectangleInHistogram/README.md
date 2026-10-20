@@ -43,6 +43,10 @@ we know the right boundary for that bar's rectangle.
 The new stack top gives the left boundary.
 Area = `height * (right - left - 1)`.
 
+> The stack maintains bars in increasing height order.
+> A bar is popped when a shorter bar arrives — that shorter bar is the right boundary.
+> The bar now at stack top is the left boundary (first bar shorter than the popped bar to its left).
+
 ---
 
 ## Solution
