@@ -26,6 +26,9 @@ A faster car that catches up to a slower car becomes part of that fleet (it can'
 |----------|------|-------|
 | Sort + Stack | O(n log n) | O(n) |
 
+> Sorting is the bottleneck — O(n log n). The stack pass is O(n).
+> Can't do better than O(n log n) since we need to know relative positions.
+
 ## Key Insight
 
 Sort cars by position (descending — closest to target first).
