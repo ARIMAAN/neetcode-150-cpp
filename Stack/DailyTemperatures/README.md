@@ -63,6 +63,12 @@ vector<int> dailyTemperatures(vector<int>& temperatures) {
 > `answer[st.top()] = i - st.top()` — the number of days to wait is the index difference.
 > We store indices (not temperatures) so we can compute this difference.
 
+## Related Problems
+
+- [Next Greater Element I (#496)](https://leetcode.com/problems/next-greater-element-i/) — same pattern, simpler
+- [Largest Rectangle in Histogram (#84)](../LargestRectangleInHistogram/) — monotonic stack
+- [Car Fleet (#853)](../CarFleet/) — monotonic stack on sorted data
+
 ## Dry Run — `[73,74,75,71,69,72,76,73]`
 
 | i | temp | stack (indices) | pops |
