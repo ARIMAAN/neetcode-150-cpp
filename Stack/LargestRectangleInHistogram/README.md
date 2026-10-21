@@ -91,6 +91,9 @@ Append 0 → `[2,1,5,6,2,3,0]`
 
 Return `10` ✅
 
+> At i=4, popping index 2 (h=5): right=4, left=st.top()=1, width=4-1-1=2. Area=10.
+> This is the `[5,6]` rectangle — height 5, width 2.
+
 ## Edge Cases
 
 - All same height: `[3,3,3]` → `9` (width=3, height=3)
