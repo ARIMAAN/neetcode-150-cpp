@@ -26,6 +26,10 @@ Given an array `heights` representing a histogram, return the area of the larges
 | Brute Force | O(n²) | O(1) |
 | Monotonic Stack | O(n) | O(n) |
 
+> This is a Hard problem. The monotonic stack approach is not intuitive.
+> The key realization: when a shorter bar arrives, it defines the right boundary
+> for all taller bars currently in the stack.
+
 ---
 
 ## Key Insight
