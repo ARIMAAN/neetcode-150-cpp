@@ -30,6 +30,11 @@ Given an array `heights` representing a histogram, return the area of the larges
 > The key realization: when a shorter bar arrives, it defines the right boundary
 > for all taller bars currently in the stack.
 
+## Complexity
+
+- **Time**: O(n) — each bar pushed and popped at most once
+- **Space**: O(n) — stack holds at most n indices
+
 ---
 
 ## Key Insight
