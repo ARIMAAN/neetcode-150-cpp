@@ -73,6 +73,9 @@ Sorted by position desc: [(10,1.0),(8,1.0),(5,7.0),(3,3.0),(0,12.0)]
 
 Return `3` ✅
 
+> Car at pos=8 has same time as car at pos=10 — they arrive together, one fleet.
+> Car at pos=3 (time=3) catches car at pos=5 (time=7) before target — joins that fleet.
+
 ## Why Sort Descending?
 
 We process cars from closest to target to farthest.
