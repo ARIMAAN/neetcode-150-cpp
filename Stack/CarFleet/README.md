@@ -44,6 +44,12 @@ Otherwise it catches up and joins the fleet ahead.
 > A car with a smaller time catches up to a car with a larger time.
 > Once it catches up, it can't pass — they become one fleet moving at the slower car's speed.
 
+## Related Problems
+
+- [Daily Temperatures (#739)](../DailyTemperatures/) — monotonic stack
+- [Largest Rectangle in Histogram (#84)](../LargestRectangleInHistogram/) — monotonic stack
+- [Meeting Rooms II (#253)](https://leetcode.com/problems/meeting-rooms-ii/) — similar interval grouping
+
 ## Solution
 
 ```cpp
