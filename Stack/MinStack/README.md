@@ -93,6 +93,12 @@ No need to rescan.
 > Then pop from `minSt` only when the popped value equals `minSt.top()`.
 > Saves space when many pushes are larger than current min.
 
+## Thought Process
+
+The problem says O(1) for getMin. That rules out scanning.
+Need to precompute the min at every stack level.
+Second stack that mirrors the main stack — each position stores the running minimum up to that point.
+
 ## Related Problems
 
 - [Valid Parentheses (#20)](../ValidParentheses/) — basic stack usage
