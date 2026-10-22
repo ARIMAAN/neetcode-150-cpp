@@ -46,6 +46,12 @@ for each bar, the first shorter bar to its left and right.
 > Brute force: for each bar, scan left and right to find boundaries — O(n) per bar = O(n²).
 > Monotonic stack: find both boundaries for all bars in a single O(n) pass.
 
+## Related Problems
+
+- [Maximal Rectangle (#85)](https://leetcode.com/problems/maximal-rectangle/) — apply this per row of a matrix
+- [Daily Temperatures (#739)](../DailyTemperatures/) — monotonic stack, next greater element
+- [Trapping Rain Water (#42)](../../Two_Pointers/TrappingRainWater/) — similar boundary thinking
+
 ---
 
 ## Why Monotonic Stack?
