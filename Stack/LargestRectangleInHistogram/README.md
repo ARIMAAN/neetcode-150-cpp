@@ -68,6 +68,12 @@ Area = `height * (right - left - 1)`.
 > Width formula: `w = st.empty() ? i : i - st.top() - 1`
 > If stack is empty after pop, the bar extends all the way to the left edge (width = i).
 
+## Thought Process
+
+Brute force: for each bar, expand left and right until shorter bar found. O(n²).
+Optimization: precompute left and right boundaries for all bars at once.
+Monotonic stack does exactly this in one pass — right boundary when popped, left from new top.
+
 ---
 
 ## Solution
