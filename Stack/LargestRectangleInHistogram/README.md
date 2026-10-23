@@ -35,6 +35,13 @@ Given an array `heights` representing a histogram, return the area of the larges
 - **Time**: O(n) — each bar pushed and popped at most once
 - **Space**: O(n) — stack holds at most n indices
 
+## Thought Process
+
+For each bar, I need the nearest shorter bar on left and right.
+Brute force: scan both directions for each bar — O(n²).
+Monotonic stack: when a shorter bar arrives, it IS the right boundary for all taller bars in the stack.
+Stack top after pop gives the left boundary. One pass handles everything.
+
 ## Related Problems
 
 - [Maximal Rectangle (#85)](https://leetcode.com/problems/maximal-rectangle/) — apply this per row of a matrix
