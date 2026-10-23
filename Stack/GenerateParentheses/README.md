@@ -42,6 +42,12 @@ Recurse until `open == close == n`.
 > `open < n`: haven't used all opens yet.
 > `close < open`: can only close an open bracket that exists.
 
+## Related Problems
+
+- [Valid Parentheses (#20)](../ValidParentheses/) — check validity
+- [Minimum Add to Make Parentheses Valid (#921)](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) — fix invalid string
+- [Remove Invalid Parentheses (#301)](https://leetcode.com/problems/remove-invalid-parentheses/) — harder backtracking
+
 ## Solution
 
 ```cpp
