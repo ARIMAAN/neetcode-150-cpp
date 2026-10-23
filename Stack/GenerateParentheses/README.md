@@ -86,3 +86,9 @@ Output: `["(())", "()()"]` ✅
 
 > This is pruned backtracking — we never generate an invalid string and then discard it.
 > Every leaf of the recursion tree is a valid result.
+
+## Thought Process
+
+Generate all 2^(2n) binary strings of `(` and `)` — filter valid ones. Too slow.
+Better: only build valid strings from the start using the two conditions.
+Backtracking with pruning: at each step, only add `(` or `)` if it keeps the string valid.
