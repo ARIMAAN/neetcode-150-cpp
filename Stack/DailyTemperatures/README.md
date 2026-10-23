@@ -73,6 +73,8 @@ vector<int> dailyTemperatures(vector<int>& temperatures) {
 
 Remaining [6,7] → ans[6]=ans[7]=0 (default) ✅
 
+> At i=6 (temp=76): pops index 2 (temp=75). ans[2] = 6-2 = 4 days. Correct.
+
 ## Edge Cases
 
 - Decreasing array `[90,80,70]` → `[0,0,0]`, stack never pops
