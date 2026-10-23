@@ -53,6 +53,12 @@ A string is valid if:
 
 ## Thought Process
 
+See brackets — think stack. The LIFO property of a stack matches the nesting structure of brackets.
+The only question is what to push and when to pop.
+Push opens, pop on close and verify match. Return `st.empty()` at end.
+
+## Thought Process
+
 First instinct: count opens and closes. But that fails for `")("` — counts match but invalid.
 Then: need to track order. Stack is the natural structure for ordered matching.
 
