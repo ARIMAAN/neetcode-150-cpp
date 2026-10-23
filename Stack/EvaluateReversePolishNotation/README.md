@@ -40,6 +40,12 @@ apply the operator, push the result back. Final answer is the only element left.
 > RPN eliminates the need for parentheses and operator precedence rules.
 > The stack naturally handles the order of operations.
 
+## Thought Process
+
+RPN is designed to be evaluated with a stack — it's literally the algorithm.
+See a number: push. See an operator: pop two, compute, push result.
+The only tricky part is pop order for `-` and `/`.
+
 ## Solution
 
 ```cpp
