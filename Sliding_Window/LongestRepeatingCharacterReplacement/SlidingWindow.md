@@ -110,6 +110,12 @@ only prevents unnecessary shrinking. The window size never decreases below the c
 > `left` only ever moves forward — so total increments of `left` across the entire run = O(n).
 > Combined with O(n) increments of `right`, total work = O(2n) = O(n).
 
+## Related Problems
+
+- [Longest Substring Without Repeating Characters (#3)](../LongestSubstringWithoutRepeatingCharacters/) — k=0 version
+- [Permutation in String (#567)](../PermutationInString/) — fixed window
+- [Minimum Window Substring (#76)](../MinimumWindowSubstring/) — harder, find minimum
+
 ## Comparison
 
 | | Brute Force | Sliding Window |
