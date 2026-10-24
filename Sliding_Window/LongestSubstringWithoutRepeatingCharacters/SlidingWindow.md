@@ -115,3 +115,9 @@ But `while` is the standard pattern and works correctly regardless.
 First instinct: nested loops checking every substring. That's O(n²).
 Then realized: when we move `i` forward by 1, most of the window is the same.
 Why recompute? Just slide. That's the sliding window insight.
+
+## Related Problems
+
+- [Longest Repeating Character Replacement (#424)](../LongestRepeatingCharacterReplacement/) — allow k replacements
+- [Permutation in String (#567)](../PermutationInString/) — fixed window anagram check
+- [Minimum Window Substring (#76)](../MinimumWindowSubstring/) — harder, find minimum window
