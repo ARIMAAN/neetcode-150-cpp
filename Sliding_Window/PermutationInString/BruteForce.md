@@ -47,6 +47,11 @@ Return `true`
 - **Time**: O(n! · m) — n! permutations, each `find` is O(m)
 - **Space**: O(n) — storing current permutation
 
+## Related Problems
+
+- [Permutation in String Sliding Window](./SlidingWindow.md) — the O(n+m) solution
+- [Next Permutation (#31)](https://leetcode.com/problems/next-permutation/) — uses `next_permutation` correctly
+
 ## Why This Is Terrible
 
 For `s1 = "abcdefghij"` (10 chars), that's 10! = 3,628,800 permutations.
