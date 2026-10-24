@@ -68,6 +68,11 @@ Final answer: **5** ✅
 > Note: resetting `freq[26] = {0}` at the start of each outer loop iteration
 > is O(26) = O(1), so it doesn't change the overall complexity.
 
+## Related Problems
+
+- [Longest Substring Without Repeating Characters (#3)](../LongestSubstringWithoutRepeatingCharacters/) — k=0 version
+- [Minimum Window Substring (#76)](../MinimumWindowSubstring/) — harder, find minimum window
+
 ## Why This Is Slow
 
 For `n = 100,000`, O(n²) = 10^10 operations — TLE.
