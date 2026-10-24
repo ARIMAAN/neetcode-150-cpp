@@ -58,6 +58,11 @@ Final answer: **3**
 > Best case is O(n) if every character is unique (inner loop never breaks early).
 > Worst case is O(n²) for strings like `"abcabc..."` where duplicates appear regularly.
 
+## Related Problems
+
+- [Longest Repeating Character Replacement (#424)](../LongestRepeatingCharacterReplacement/) — allow k replacements
+- [Minimum Window Substring (#76)](../MinimumWindowSubstring/) — find minimum window containing all chars
+
 ## Edge Cases
 
 | Input | Output |
