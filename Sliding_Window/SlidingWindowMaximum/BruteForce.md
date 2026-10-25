@@ -52,6 +52,11 @@ Output: `[3,3,5,5,6,7]` ✅
 > Worst case: k=n, one window of size n — O(n²) total.
 > Average case for k=n/2: O(n²/2) = O(n²).
 
+## Related Problems
+
+- [Sliding Window Maximum Monotonic Deque](./MonotonicDeque.md) — the O(n) solution
+- [Daily Temperatures (#739)](../../Stack/DailyTemperatures/) — monotonic stack, similar idea
+
 ## Why This Is Slow
 
 For `n = 10^5` and `k = 10^4`, that's 10^9 operations — TLE.
