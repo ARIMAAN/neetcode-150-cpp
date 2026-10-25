@@ -72,3 +72,8 @@ Brute force is the natural first attempt. Two nested loops, check each substring
 The key observation that leads to sliding window: when we move `i` forward by 1,
 we only lose one character from the left and gain nothing on the right.
 Why recheck everything? Just maintain the window state.
+
+## Related Problems
+
+- [Permutation in String (#567)](../PermutationInString/) — fixed window, easier
+- [Longest Repeating Character Replacement (#424)](../LongestRepeatingCharacterReplacement/) — find maximum window
