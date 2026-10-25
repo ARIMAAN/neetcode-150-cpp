@@ -54,6 +54,9 @@ Area = `height * (right - left - 1)`.
 > A bar is popped when a shorter bar arrives — that shorter bar is the right boundary.
 > The bar now at stack top is the left boundary (first bar shorter than the popped bar to its left).
 
+> Width formula: `w = st.empty() ? i : i - st.top() - 1`
+> If stack is empty after pop, the bar extends all the way to the left edge (width = i).
+
 ---
 
 ## Solution
