@@ -60,3 +60,7 @@ We don't need to enumerate permutations — we just need to compare frequencies.
 
 > The key realization: two strings are anagrams iff their freq arrays match.
 > We never need to look at actual permutations at all.
+
+> This approach is correct but completely impractical.
+> Even for `s1 = "abc"` (3 chars), we generate 6 permutations.
+> For `s1 = "abcde"` (5 chars), that's 120. For 10 chars, 3.6 million.
