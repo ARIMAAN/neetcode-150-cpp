@@ -86,6 +86,9 @@ Keeping the old equal element would give wrong results when it expires.
 > The while loop inside the for loop is still O(n) total.
 > Each element is pushed once and popped at most once — total deque operations = O(2n) = O(n).
 
+> For k=1: deque always has exactly 1 element, output = input array.
+> For k=n: deque grows to n then shrinks, output = [max of entire array].
+
 ## Related Problems
 
 - [Daily Temperatures (#739)](../../Stack/DailyTemperatures/) — monotonic stack, next greater element
