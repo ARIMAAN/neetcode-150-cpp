@@ -80,6 +80,19 @@ Each iteration either returns or strictly shrinks the `[lo, hi]` window (`lo` in
 - Time: O(log n) — search space halves each iteration
 - Space: O(1) — just three pointers
 
+## STL Alternative
+
+C++ STL has `lower_bound` and `upper_bound` which use binary search internally:
+
+```cpp
+auto it = lower_bound(nums.begin(), nums.end(), target);
+if (it != nums.end() && *it == target)
+    return it - nums.begin();
+return -1;
+```
+
+But for interviews, writing it manually shows you understand the mechanics.
+
 ## Common Mistake
 
 Using `lo < hi` instead of `lo <= hi`. That misses the case where exactly one element remains (`lo == hi`). If that element is the target, you'd return -1 incorrectly.
