@@ -65,6 +65,10 @@ At every iteration: if `target` exists in `nums`, it must be in `nums[lo..hi]`. 
 
 If `lo` and `hi` are both near `INT_MAX`, `lo + hi` overflows. The subtraction form is always safe.
 
+## Termination Proof
+
+Each iteration either returns or strictly shrinks the `[lo, hi]` window (`lo` increases or `hi` decreases). So the loop always terminates in at most O(log n) steps.
+
 ## Edge Cases
 
 - Single element array: `lo == hi == 0`, one comparison, works fine
