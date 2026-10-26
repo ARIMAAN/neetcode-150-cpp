@@ -39,6 +39,15 @@ Output: -1
 
 ---
 
+## Approach Comparison
+
+| | Brute Force | Binary Search |
+|---|---|---|
+| Uses sorted property? | No | Yes |
+| Time | O(n) | O(log n) |
+| Space | O(1) | O(1) |
+| Comparisons for n=10^4 | ~10,000 | ~14 |
+
 ## Key Insight
 
 The array is sorted — so if `nums[mid] < target`, everything to the left of `mid` is also less than target. We can safely discard the left half. Same logic applies to the right half. This halving is what gives us O(log n).
