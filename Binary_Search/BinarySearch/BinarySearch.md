@@ -57,6 +57,10 @@ public:
 
 Return `-1` ✅
 
+## Loop Invariant
+
+At every iteration: if `target` exists in `nums`, it must be in `nums[lo..hi]`. We maintain this by moving `lo` and `hi` past already-checked indices.
+
 ## Why `lo + (hi - lo) / 2` and not `(lo + hi) / 2`
 
 If `lo` and `hi` are both near `INT_MAX`, `lo + hi` overflows. The subtraction form is always safe.
