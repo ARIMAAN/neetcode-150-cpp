@@ -43,6 +43,10 @@ public:
 - Time: O(n) — worst case we scan the whole array
 - Space: O(1) — no extra memory
 
+## Early Exit Optimization
+
+Since the array is sorted, we can also exit early if `nums[0] > target` or `nums[n-1] < target`. But this is a micro-optimization — the asymptotic complexity stays O(n).
+
 ## Why This Is Terrible Here
 
 The problem explicitly says O(log n) is required. Also, the array is sorted — ignoring that is wasteful. If n = 10^4, linear scan does 10,000 comparisons. Binary search does ~14.
