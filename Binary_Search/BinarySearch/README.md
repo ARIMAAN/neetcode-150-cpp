@@ -58,6 +58,10 @@ Sorted order gives us a **monotonic property**: elements only increase left to r
 
 ---
 
+## Binary Search on Answer Space
+
+Beyond searching arrays, binary search can be applied to an **answer space** — when the answer is a number in a range and you can check feasibility in O(n). Koko Eating Bananas (#875) is the classic example of this pattern.
+
 ## Binary Search as a Template
 
 This problem is the purest form of binary search. All harder binary search problems (rotated array, Koko bananas, etc.) are variations where the "comparison" step changes, but the `lo/hi/mid` skeleton stays the same.
