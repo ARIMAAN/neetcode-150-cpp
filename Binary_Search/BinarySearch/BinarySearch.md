@@ -65,6 +65,10 @@ At every iteration: if `target` exists in `nums`, it must be in `nums[lo..hi]`. 
 
 If `lo` and `hi` are both near `INT_MAX`, `lo + hi` overflows. The subtraction form is always safe.
 
+## Number of Iterations
+
+For an array of size n, binary search takes at most `floor(log2(n)) + 1` iterations. For n = 10^4, that's 14. For n = 10^9, that's 30. This is why binary search is so powerful.
+
 ## Termination Proof
 
 Each iteration either returns or strictly shrinks the `[lo, hi]` window (`lo` increases or `hi` decreases). So the loop always terminates in at most O(log n) steps.
