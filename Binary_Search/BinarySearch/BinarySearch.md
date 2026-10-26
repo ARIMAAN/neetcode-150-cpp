@@ -84,6 +84,20 @@ Each iteration either returns or strictly shrinks the `[lo, hi]` window (`lo` in
 
 Using `lo < hi` instead of `lo <= hi`. That misses the case where exactly one element remains (`lo == hi`). If that element is the target, you'd return -1 incorrectly.
 
+## Recursive Variant
+
+Binary search can also be written recursively, but the iterative version is preferred — no call stack overhead and no risk of stack overflow for large inputs.
+
+```cpp
+int bsearch(vector<int>& nums, int lo, int hi, int target) {
+    if (lo > hi) return -1;
+    int mid = lo + (hi - lo) / 2;
+    if (nums[mid] == target) return mid;
+    if (nums[mid] < target) return bsearch(nums, mid + 1, hi, target);
+    return bsearch(nums, lo, mid - 1, target);
+}
+```
+
 ## Thought Process
 
 Classic template. The key decision is always: what does `lo = mid + 1` vs `hi = mid - 1` mean? We move past `mid` (not to `mid`) because we already checked `mid` and it wasn't the answer. The `lo <= hi` condition (not `<`) ensures we don't miss the case where `lo == hi` (single element remaining).
