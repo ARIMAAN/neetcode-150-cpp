@@ -43,6 +43,10 @@ Output: -1
 
 The array is sorted — so if `nums[mid] < target`, everything to the left of `mid` is also less than target. We can safely discard the left half. Same logic applies to the right half. This halving is what gives us O(log n).
 
+## Why Binary Search Works on Sorted Arrays
+
+Sorted order gives us a **monotonic property**: elements only increase left to right. This means we can make a binary decision at every step — go left or go right. Without sorted order, we'd have no way to know which half to discard.
+
 ---
 
 ## Related Problems
