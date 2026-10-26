@@ -80,6 +80,10 @@ Each iteration either returns or strictly shrinks the `[lo, hi]` window (`lo` in
 - Time: O(log n) — search space halves each iteration
 - Space: O(1) — just three pointers
 
+## Common Mistake
+
+Using `lo < hi` instead of `lo <= hi`. That misses the case where exactly one element remains (`lo == hi`). If that element is the target, you'd return -1 incorrectly.
+
 ## Thought Process
 
 Classic template. The key decision is always: what does `lo = mid + 1` vs `hi = mid - 1` mean? We move past `mid` (not to `mid`) because we already checked `mid` and it wasn't the answer. The `lo <= hi` condition (not `<`) ensures we don't miss the case where `lo == hi` (single element remaining).
