@@ -58,6 +58,10 @@ Sorted order gives us a **monotonic property**: elements only increase left to r
 
 ---
 
+## Binary Search as a Template
+
+This problem is the purest form of binary search. All harder binary search problems (rotated array, Koko bananas, etc.) are variations where the "comparison" step changes, but the `lo/hi/mid` skeleton stays the same.
+
 ## Related Problems
 
 - [Search a 2D Matrix (#74)](https://leetcode.com/problems/search-a-2d-matrix/) — binary search on flattened matrix
